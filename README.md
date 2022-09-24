@@ -1,5 +1,2 @@
-# API Transit Basics
-
-This is an API transit map to help walk folks through the basics of operating an API.
-
-URL: http://basics.apievangelist.com/
+# Algorotoscope
+This is a project where I work to make sense of the algorithmic influences on our digital worlds using images.
