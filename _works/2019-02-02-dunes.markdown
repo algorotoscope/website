@@ -1,0 +1,15 @@
+---
+published: true
+layout: post
+title: Dunes
+date: 2019-02-02T09:00:00.000Z
+tags:
+  - Algorotoscope Works
+  - Dunes
+  - Sand
+image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/working/dunes.png
+video: https://www.youtube.com/embed/v6JZpDnzR6g
+square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/working/dunes-square.png
+---
+<center><iframe width="853" height="505" src="{{ page.video }}" frameborder="0" allowfullscreen></iframe></center>
+<center>Walking along the top of the dunes.</center>
