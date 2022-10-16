@@ -16,8 +16,8 @@ title: Kin Lane
 	{% assign slug = collection.title | replace: " ", "-" | downcase %}
 		<div style="width: 300px;">
 			<div>
-				<a href="/collections/{{ slug }}/" target="_blank"><img src="{{ collection.feature }}" width="100%"></a>
-				<h3 class="uk-card-title uk-margin"><a href="/collections/{{ slug }}/" target="_blank"></a>{{ collection.title }}</h3></h3>
+				<a href="/collections/{{ slug }}/"><img src="{{ collection.feature }}" width="100%"></a>
+				<h3 class="uk-card-title uk-margin"><a href="/collections/{{ slug }}/"></a>{{ collection.title }}</h3></h3>
 			</div>
 		</div>
 	{% endfor %}
@@ -29,7 +29,7 @@ title: Kin Lane
 	{% for work in site.works %}
 		<div style="width: 300px;">
 			<div>
-				<a href="{{ work.url }}" target="_blank"><img src="{{ work.square }}" width="100%"></a>
+				<a href="{{ work.url }}"><img src="{{ work.square }}" width="100%"></a>
 			</div>
 		</div>
 	{% endfor %}
