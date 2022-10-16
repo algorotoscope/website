@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Harlem Tracks
 date: 2018-02-21T09:00:00.000Z
 tags:

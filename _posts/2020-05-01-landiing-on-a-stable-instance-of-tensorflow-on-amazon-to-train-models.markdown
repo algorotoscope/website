@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Landing on a Stable Instance of Tensorflow on Amazon to Train Models
 date: 2020-05-16T12:00:00.000Z
 tags:

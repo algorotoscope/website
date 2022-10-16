@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Raven on the Barbed Wire
 date: 2017-12-01T09:00:00.000Z
 tags:

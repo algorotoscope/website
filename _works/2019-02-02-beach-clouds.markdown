@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Beach Clouds
 date: 2019-02-02T09:00:00.000Z
 tags:

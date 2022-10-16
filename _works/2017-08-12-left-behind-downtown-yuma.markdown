@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Left Behind in Downtown Yuma
 date: 2017-08-12T09:00:00.000Z
 tags:

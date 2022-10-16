@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Gas Station Left Behind
 date: 2017-06-25T09:00:00.000Z
 tags:

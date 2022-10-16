@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Dark Clouds Over the School House
 date: 2017-06-24T09:00:00.000Z
 tags:

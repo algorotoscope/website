@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Frozen Tree in the Sun
 date: 2018-01-24T09:00:00.000Z
 tags:

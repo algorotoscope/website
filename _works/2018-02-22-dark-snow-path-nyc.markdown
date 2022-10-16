@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Dark Snow Path in NYC
 date: 2018-02-22T09:00:00.000Z
 tags:

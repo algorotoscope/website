@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Blossom Bar Rapids
 date: 2016-12-22T09:00:00.000Z
 tags:

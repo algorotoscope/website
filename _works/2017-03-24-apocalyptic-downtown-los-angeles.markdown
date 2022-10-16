@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Apocalyptic Downtown Los Angeles
 date: 2017-03-24T09:00:00.000Z
 tags:

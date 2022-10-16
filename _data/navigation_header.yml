@@ -1,0 +1,10 @@
+# Navbar left menu navigation links
+left:
+  - title: Home
+    url: /
+
+  - title: Updates
+    url: /updates/    
+
+
+right:

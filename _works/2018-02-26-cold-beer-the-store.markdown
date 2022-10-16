@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Cold Beer Store
 date: 2018-02-26T09:00:00.000Z
 tags:

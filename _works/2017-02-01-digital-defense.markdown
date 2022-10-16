@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Digital Defense
 date: 2017-02-01T09:00:00.000Z
 tags:

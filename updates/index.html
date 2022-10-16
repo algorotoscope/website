@@ -1,20 +1,55 @@
 ---
 layout: default
+title: Project Updates
 ---
-<section>
-	<div class="content">
-	<h3>Algorotoscope Updates</h3>
-	<p>These are the stories I have told along the way, as I'm producing images and videos.</p>
-	<center><hr style="width: 75%;" /></center>
-  {% for post in paginator.posts %}
-      <h3><a href="{{ site.production_url }}{{ post.url }}">{{ post.title }}</a></h3>
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-      {{ post.content }}
-      <ul class="actions" style="text-align: center;">
-        <li><a href="{{ site.production_url }}{{ post.url }}" class="button big">Details</a></li>
-      </ul>
-    	<center><hr style="width: 75%;" /></center>
-  {% endfor %}
 
-  </div>
-</section>
+<div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+
+        <h1 class="uk-article-title uk-text-center">{{ page.title | escape }}</h1>
+
+        {% for post in site.posts %}
+        <div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium card-post uk-inline border-radius-medium border-xlight uk-width-1-1 uk-margin">
+            <a class="uk-position-cover" href="{{ post.url | relative_url }}"></a>
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    
+                    {% if post.author %}
+                      {% assign author = site.authors[post.author.name] %}
+                    {% else %}
+                      {% assign author = site.author %}
+                    {% endif %}
+
+                    {% if author.avatar %}
+                        <div class="uk-width-auto">
+                            {% if author.avatar contains 'http' %}
+                                {% assign domain = '' %}
+                            {% else %}
+                                {% assign domain = '' %}
+                            {% endif %}
+                            <img class="uk-border-circle avatar" src="{{ author.avatar }}" alt="{{ author.name }}">
+                        </div>
+                    {% endif %}
+                  
+                  
+                    <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">{{ post.title }}</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="{{ post.date | date_to_xmlschema }}">
+                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                            {{ post.date | date: date_format }}
+                        </time></p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-body">
+                <img src="{{ post.image }}" width="25%" align="left" style="padding: 10px; margin-top: 15px;">{{ post.excerpt | truncate: 500 | strip_html }}
+            </div>
+            <div class="uk-card-footer">
+                <span class="uk-button uk-button-text">{{ site.data.translation[site.lang].read_more | default: "Read more" }} &rarr;</span>
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+</div>

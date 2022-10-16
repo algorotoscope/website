@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Waves of Technology
 date: 2018-02-17T09:00:00.000Z
 tags:

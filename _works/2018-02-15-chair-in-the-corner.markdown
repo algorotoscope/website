@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Chair in the Corner
 date: 2018-02-15T09:00:00.000Z
 tags:

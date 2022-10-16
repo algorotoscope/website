@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Border Crossing
 date: 2017-07-20T09:00:00.000Z
 tags:

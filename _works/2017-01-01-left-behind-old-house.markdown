@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Old House Left Behind
 date: 2017-01-01T09:00:00.000Z
 tags:

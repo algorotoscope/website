@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Doing This All Again
 date: 2017-01-24T09:00:00.000Z
 tags:

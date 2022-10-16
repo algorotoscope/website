@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Piano in the Courtyard
 date: 2018-02-25T09:00:00.000Z
 tags:

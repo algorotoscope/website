@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Steps of the Supreme Court
 date: 2018-02-27T09:00:00.000Z
 tags:

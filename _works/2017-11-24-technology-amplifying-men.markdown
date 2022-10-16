@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Technology Amplifying Men
 date: 2017-11-24T09:00:00.000Z
 tags:

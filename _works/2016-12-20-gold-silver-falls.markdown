@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Gold and Silver Falls
 date: 2016-12-22T09:00:00.000Z
 tags:

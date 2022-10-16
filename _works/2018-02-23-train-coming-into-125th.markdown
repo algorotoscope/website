@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Train Coming Into 125th
 date: 2018-02-23T09:00:00.000Z
 tags:

@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Generating Energy Down the Road
 date: 2018-01-10T09:00:00.000Z
 tags:

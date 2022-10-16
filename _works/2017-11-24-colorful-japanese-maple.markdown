@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Colorful Japanese Maple
 date: 2017-11-24T09:00:00.000Z
 tags:

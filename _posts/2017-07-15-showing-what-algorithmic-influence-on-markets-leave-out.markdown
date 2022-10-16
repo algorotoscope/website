@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Showing What Algorithmic Influence On Markets Leaves Out
 date: 2017-07-15T12:00:00.000Z
 tags:

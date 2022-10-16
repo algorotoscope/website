@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Working On The Technology Religion
 date: 2018-01-22T09:00:00.000Z
 tags:

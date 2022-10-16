@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Algorithmic Distortion on the Immigration Debate
 date: 2017-05-01T09:00:00.000Z
 tags:

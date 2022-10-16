@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Exploring The Economics of Wholesale and Retail Algorithmic APIs | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="Exploring The Economics of Wholesale and Retail Algorithmic APIs" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I got sucked into a month long project applying machine learning filters to video over the holidays. The project began with me doing the research on the economics behind Algorithmia&#39;s machine learning services, specifically the DeepFilter algorithm in their catalog. My algorithmic rotoscope work applying Algorithmia&#39;s Deep Filters to images and drone videos has given me a hands-on&nbsp;view of Algorithmia&#39;s approach to algorithms, and APIs, and the opportunity to think pretty deeply about the economics of all of this. I think Algorithmia&#39;s vision of all of this has a lot of potential for not just image filters, but any sort of algorithmic and machine learning API. Retail Algorithmic and Machine Learning APIsUsing Algorithmia is pretty straightforward. With their API or CLI you can make calls to a variety of algorithms in their catalog, in this case their DeepFilter solution. All I do is pass them the URL of an image, what I want the new filtered image to be called, and the name of the filter that I want to be applied. Algorithmia provides an API explorer you can copy &amp; paste the required JSON into, or they also provide a demo application for you to use--no JSON required.&nbsp; Training Your Own Style Transfer Models Using Their AWS AMIThe first &quot;rabbit hole&quot; concept I fell into when doing the research on Algorithmia&#39;s model was their story on creating your own style transfer models, providing you step by step details on how to train them, including a ready to go AWS AMI that you can run as a GPU instance. At first, I thought they were just cannibalizing their own service, but then I realized it was much more savvier than that. They were offloading much of the costly compute resources needed to create the models, but the end product still resulted in using their Deep Filter APIs.&nbsp; Developing My Own API Layer For Working With Images and VideosOnce I had experience using Algorithmia&#39;s deep filter via their API, and had produced a handful of my own style transfer models, I got to work designing my own process for uploading and applying the filters to images, then eventually separating out videos into individual images, applying the filters, then reassembling them into videos. The entire process, start to finish is a set of APIs, with a couple of them simply acting as a facade for Algorithmia&#39;s file upload, download, and DeepFilter APIs. It provided me with a perfect hypothetical business for thinking through the economics of building on top of Algorithmia&#39;s platform. Defining My Hard Costs of Algorithmia&#39;s Service and the AWS Compute NeededAlgorithmia provides a pricing calculator along with each of their algorithms, allowing you to easily predict your costs. They charge you per API call, and the compute usage by the second. Each API has its own calculator, and average runtime duration costs, so I&#39;m easily able to calculate a per image cost to apply filters--something that exponentially grows when you are applying to 60 frames (images) per second of video. Similarly, when it comes to training filter models using AWS EC2 GUP instance, I have a per hour charge for compute, storage costs, and (now) a pretty good idea of how many hours it takes to make a single filter.&nbsp; All of this gives me some pretty solid numbers to work with when trying to build a viable business built on top of Algorithmia. In theory, when my customers use my algorithmic rotoscope image or video interface, as well as the API, I can cover my operating costs, and generate a healthy profit by charging a per image cost for applying a machine learning texture filter. What I really think is innovative about Algorithmia&#39;s approach is that they are providing an AWS AMI to offload much of the &quot;heavy compute lifting&quot;, with all roads still leading back to using their service. It is a model that could quickly shift algorithmic API consumers to be more wholesale / volume consumers, from being just a retail level API consumer. My example of this focuses on images and video, but this model can be applied to any type of algorithmically fueled APIs. It provides me with a model of how you can safely open source the process behind your algorithms as AWS AMI and actually drive more business to your APIs by evolving your API consumers into wholesale API consumers. In my experience, many API providers are very concerned with malicious users reverse engineering their algorithms via their APIs, when in reality, in true API fashion, there are ways you can actually open up your algorithms, make them more accessible, and deployable, while still helping contribute significantly to your bottom line." />
+<meta property="og:description" content="I got sucked into a month long project applying machine learning filters to video over the holidays. The project began with me doing the research on the economics behind Algorithmia&#39;s machine learning services, specifically the DeepFilter algorithm in their catalog. My algorithmic rotoscope work applying Algorithmia&#39;s Deep Filters to images and drone videos has given me a hands-on&nbsp;view of Algorithmia&#39;s approach to algorithms, and APIs, and the opportunity to think pretty deeply about the economics of all of this. I think Algorithmia&#39;s vision of all of this has a lot of potential for not just image filters, but any sort of algorithmic and machine learning API. Retail Algorithmic and Machine Learning APIsUsing Algorithmia is pretty straightforward. With their API or CLI you can make calls to a variety of algorithms in their catalog, in this case their DeepFilter solution. All I do is pass them the URL of an image, what I want the new filtered image to be called, and the name of the filter that I want to be applied. Algorithmia provides an API explorer you can copy &amp; paste the required JSON into, or they also provide a demo application for you to use--no JSON required.&nbsp; Training Your Own Style Transfer Models Using Their AWS AMIThe first &quot;rabbit hole&quot; concept I fell into when doing the research on Algorithmia&#39;s model was their story on creating your own style transfer models, providing you step by step details on how to train them, including a ready to go AWS AMI that you can run as a GPU instance. At first, I thought they were just cannibalizing their own service, but then I realized it was much more savvier than that. They were offloading much of the costly compute resources needed to create the models, but the end product still resulted in using their Deep Filter APIs.&nbsp; Developing My Own API Layer For Working With Images and VideosOnce I had experience using Algorithmia&#39;s deep filter via their API, and had produced a handful of my own style transfer models, I got to work designing my own process for uploading and applying the filters to images, then eventually separating out videos into individual images, applying the filters, then reassembling them into videos. The entire process, start to finish is a set of APIs, with a couple of them simply acting as a facade for Algorithmia&#39;s file upload, download, and DeepFilter APIs. It provided me with a perfect hypothetical business for thinking through the economics of building on top of Algorithmia&#39;s platform. Defining My Hard Costs of Algorithmia&#39;s Service and the AWS Compute NeededAlgorithmia provides a pricing calculator along with each of their algorithms, allowing you to easily predict your costs. They charge you per API call, and the compute usage by the second. Each API has its own calculator, and average runtime duration costs, so I&#39;m easily able to calculate a per image cost to apply filters--something that exponentially grows when you are applying to 60 frames (images) per second of video. Similarly, when it comes to training filter models using AWS EC2 GUP instance, I have a per hour charge for compute, storage costs, and (now) a pretty good idea of how many hours it takes to make a single filter.&nbsp; All of this gives me some pretty solid numbers to work with when trying to build a viable business built on top of Algorithmia. In theory, when my customers use my algorithmic rotoscope image or video interface, as well as the API, I can cover my operating costs, and generate a healthy profit by charging a per image cost for applying a machine learning texture filter. What I really think is innovative about Algorithmia&#39;s approach is that they are providing an AWS AMI to offload much of the &quot;heavy compute lifting&quot;, with all roads still leading back to using their service. It is a model that could quickly shift algorithmic API consumers to be more wholesale / volume consumers, from being just a retail level API consumer. My example of this focuses on images and video, but this model can be applied to any type of algorithmically fueled APIs. It provides me with a model of how you can safely open source the process behind your algorithms as AWS AMI and actually drive more business to your APIs by evolving your API consumers into wholesale API consumers. In my experience, many API providers are very concerned with malicious users reverse engineering their algorithms via their APIs, when in reality, in true API fashion, there are ways you can actually open up your algorithms, make them more accessible, and deployable, while still helping contribute significantly to your bottom line." />
+<link rel="canonical" href="http://localhost:4000/2017/01/03/exploring-the-economics-of-wholesale-and-retail-algorithmic-apis/" />
+<meta property="og:url" content="http://localhost:4000/2017/01/03/exploring-the-economics-of-wholesale-and-retail-algorithmic-apis/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/algorithmia_pricing_how_it_works.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-03T12:00:00-08:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Kin Lane"},"url":"http://localhost:4000/2017/01/03/exploring-the-economics-of-wholesale-and-retail-algorithmic-apis/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"headline":"Exploring The Economics of Wholesale and Retail Algorithmic APIs","dateModified":"2017-01-03T12:00:00-08:00","datePublished":"2017-01-03T12:00:00-08:00","image":"http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/algorithmia_pricing_how_it_works.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/01/03/exploring-the-economics-of-wholesale-and-retail-algorithmic-apis/"},"description":"I got sucked into a month long project applying machine learning filters to video over the holidays. The project began with me doing the research on the economics behind Algorithmia&#39;s machine learning services, specifically the DeepFilter algorithm in their catalog. My algorithmic rotoscope work applying Algorithmia&#39;s Deep Filters to images and drone videos has given me a hands-on&nbsp;view of Algorithmia&#39;s approach to algorithms, and APIs, and the opportunity to think pretty deeply about the economics of all of this. I think Algorithmia&#39;s vision of all of this has a lot of potential for not just image filters, but any sort of algorithmic and machine learning API. Retail Algorithmic and Machine Learning APIsUsing Algorithmia is pretty straightforward. With their API or CLI you can make calls to a variety of algorithms in their catalog, in this case their DeepFilter solution. All I do is pass them the URL of an image, what I want the new filtered image to be called, and the name of the filter that I want to be applied. Algorithmia provides an API explorer you can copy &amp; paste the required JSON into, or they also provide a demo application for you to use--no JSON required.&nbsp; Training Your Own Style Transfer Models Using Their AWS AMIThe first &quot;rabbit hole&quot; concept I fell into when doing the research on Algorithmia&#39;s model was their story on creating your own style transfer models, providing you step by step details on how to train them, including a ready to go AWS AMI that you can run as a GPU instance. At first, I thought they were just cannibalizing their own service, but then I realized it was much more savvier than that. They were offloading much of the costly compute resources needed to create the models, but the end product still resulted in using their Deep Filter APIs.&nbsp; Developing My Own API Layer For Working With Images and VideosOnce I had experience using Algorithmia&#39;s deep filter via their API, and had produced a handful of my own style transfer models, I got to work designing my own process for uploading and applying the filters to images, then eventually separating out videos into individual images, applying the filters, then reassembling them into videos. The entire process, start to finish is a set of APIs, with a couple of them simply acting as a facade for Algorithmia&#39;s file upload, download, and DeepFilter APIs. It provided me with a perfect hypothetical business for thinking through the economics of building on top of Algorithmia&#39;s platform. Defining My Hard Costs of Algorithmia&#39;s Service and the AWS Compute NeededAlgorithmia provides a pricing calculator along with each of their algorithms, allowing you to easily predict your costs. They charge you per API call, and the compute usage by the second. Each API has its own calculator, and average runtime duration costs, so I&#39;m easily able to calculate a per image cost to apply filters--something that exponentially grows when you are applying to 60 frames (images) per second of video. Similarly, when it comes to training filter models using AWS EC2 GUP instance, I have a per hour charge for compute, storage costs, and (now) a pretty good idea of how many hours it takes to make a single filter.&nbsp; All of this gives me some pretty solid numbers to work with when trying to build a viable business built on top of Algorithmia. In theory, when my customers use my algorithmic rotoscope image or video interface, as well as the API, I can cover my operating costs, and generate a healthy profit by charging a per image cost for applying a machine learning texture filter. What I really think is innovative about Algorithmia&#39;s approach is that they are providing an AWS AMI to offload much of the &quot;heavy compute lifting&quot;, with all roads still leading back to using their service. It is a model that could quickly shift algorithmic API consumers to be more wholesale / volume consumers, from being just a retail level API consumer. My example of this focuses on images and video, but this model can be applied to any type of algorithmically fueled APIs. It provides me with a model of how you can safely open source the process behind your algorithms as AWS AMI and actually drive more business to your APIs by evolving your API consumers into wholesale API consumers. In my experience, many API providers are very concerned with malicious users reverse engineering their algorithms via their APIs, when in reality, in true API fashion, there are ways you can actually open up your algorithms, make them more accessible, and deployable, while still helping contribute significantly to your bottom line.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://algorithmic.rotoscope.work/2017/01/03/exploring-the-economics-of-wholesale-and-retail-algorithmic-apis/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Exploring The Economics of Wholesale and Retail Algorithmic APIs | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://algorithmic.rotoscope.work/2017/01/03/exploring-the-economics-of-wholesale-and-retail-algorithmic-apis/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Exploring The Economics of Wholesale and Retail Algorithmic APIs | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/">Algorotoscope.Work</a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/updates/" >Updates</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Exploring The Economics of Wholesale and Retail Algorithmic APIs</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2017-01-03T12:00:00-08:00" itemprop="datePublished">
+    
+    Jan 3, 2017
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><img src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/algorithmia_pricing_how_it_works.png" width="90%" align="center" style="padding: 5px;"></center>
+                <p><img style="padding: 15px;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/algorithmia_pricing.png" alt="" width="45%" align="right" /></p>
+<p>I got sucked into <a href="http://apievangelist.com/2017/01/03/learning-about-machine-learning-apis-with-my-algorithmic-rotoscope-work/">a month long project applying machine learning filters to video over the holidays</a>. The project began with me doing the research on the economics behind Algorithmia's machine learning services, specifically <a href="https://algorithmia.com/algorithms/deeplearning/DeepFilter">the DeepFilter algorithm in their catalog</a>. My <a href="http://algorithmic.rotoscope.work">algorithmic rotoscope</a> work applying Algorithmia's Deep Filters to images and drone videos has given me a hands-on&nbsp;view of Algorithmia's approach to algorithms, and APIs, and the opportunity to think pretty deeply about the economics of all of this. I think Algorithmia's vision of all of this has a lot of potential for not just image filters, but any sort of algorithmic and machine learning API.</p>
+<p><strong>Retail Algorithmic and Machine Learning APIs</strong><br />Using <a href="http://algorithmia.io">Algorithmia</a> is pretty straightforward. With their API or CLI you can make calls to a variety of algorithms in their catalog, in this case<a href="https://algorithmia.com/algorithms/deeplearning/DeepFilter"> their DeepFilter solution</a>. All I do is pass them the URL of an image, what I want the new filtered image to be called, and the name of the filter that I want to be applied. Algorithmia provides an API explorer you can copy &amp; paste the required JSON into, or they also provide a demo application for you to use--no JSON required.&nbsp;</p>
+<p><strong>Training Your Own Style Transfer Models Using Their AWS AMI</strong><br />The first "rabbit hole" concept I fell into when doing the research on Algorithmia's model was <a href="/admin/blog/blog.algorithmia.com/training-style-transfer-models/">their story on creating your own style transfer models</a>, providing you step by step details on how to train them, including a ready to go AWS AMI that you can run as a GPU instance. At first, I thought they were just cannibalizing their own service, but then I realized it was much more savvier than that. They were offloading much of the costly compute resources needed to create the models, but the end product still resulted in using their Deep Filter APIs.&nbsp;</p>
+<p><strong>Developing My Own API Layer For Working With Images and Videos</strong><br />Once I had experience using Algorithmia's deep filter via their API, and had produced a handful of my own style transfer models, I got to work designing my own process for uploading and applying the filters to images, then eventually separating out videos into individual images, applying the filters, then reassembling them into videos. The entire process, start to finish is a set of APIs, with a couple of them simply acting as a facade for Algorithmia's file upload, download, and DeepFilter APIs. It provided me with a perfect hypothetical business for thinking through the economics of building on top of Algorithmia's platform.</p>
+<p><a href="https://algorithmia.com/pricing"><img style="padding: 15px; display: block; margin-left: auto; margin-right: auto;" src="http://kinlane-productions2.s3.amazonaws.com/api_evangelist_site/blog/algorithmia_pricing_how_it_works.png" alt="" width="75%" align="center" /></a></p>
+<p><strong>Defining My Hard Costs of Algorithmia's Service and the AWS Compute Needed</strong><br />Algorithmia provides <a href="https://algorithmia.com/algorithms/deeplearning/DeepFilter">a pricing calculator along with each of their algorithms</a>, allowing you to easily predict your costs. They charge you per API call, and the compute usage by the second. Each API has its own calculator, and average runtime duration costs, so I'm easily able to calculate a per image cost to apply filters--something that exponentially grows when you are applying to 60 frames (images) per second of video. Similarly, when it comes to training filter models using AWS EC2 GUP instance, I have a per hour charge for compute, storage costs, and (now) a pretty good idea of how many hours it takes to make a single filter.&nbsp;</p>
+<p>All of this gives me some pretty solid numbers to work with when trying to build a viable business built on top of Algorithmia. In theory, when my customers use my algorithmic rotoscope image or video interface, as well as the API, I can cover my operating costs, and generate a healthy profit by charging a per image cost for applying a machine learning texture filter. What I really think is innovative about Algorithmia's approach is that they are providing an AWS AMI to offload much of the "heavy compute lifting", with all roads still leading back to using their service. It is a model that could quickly shift algorithmic API consumers to be more wholesale / volume consumers, from being just a retail level API consumer.</p>
+<p>My example of this focuses on images and video, but this model can be applied to any type of algorithmically fueled APIs. It provides me with a model of how you can safely open source the process behind your algorithms as AWS AMI and actually drive more business to your APIs by evolving your API consumers into wholesale API consumers. In my experience, many API providers are very concerned with malicious users reverse engineering their algorithms via their APIs, when in reality, in true API fashion, there are ways you can actually open up your algorithms, make them more accessible, and deployable, while still helping contribute significantly to your bottom line.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Exploring The Economics of Wholesale and Retail Algorithmic APIs&url=http://localhost:4000/2017/01/03/exploring-the-economics-of-wholesale-and-retail-algorithmic-apis/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F01%2F03%2Fexploring-the-economics-of-wholesale-and-retail-algorithmic-apis%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2017/01/03/learning-about-machine-learning-apis-with-my-algorithmic-rotoscope-work/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2017/01/03/finding-the-right-dystopian-filter-to-represent-the-world-unfolding-around-us/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+<div>
+    <a href="https://github.com/kinlane" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="http://kinlane.com" target="_blank" >Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+<div>
+    <a href="https://github.com/kinlane" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

@@ -1,6 +1,6 @@
 ---
 published: true
-layout: post
+layout: works
 title: Commuters in Paris
 date: 2018-02-22T11:00:00.000Z
 tags:
