@@ -9,7 +9,7 @@ tags:
   - Burns
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/working/diamond-creek.png
 video: https://www.youtube.com/embed/-DrrRLB1kxk
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/working/diamond-creek-square.png
+square: https://kinlane-productions2.s3.amazonaws.com/algo-rotoscope/working/diamond-creek-square.png.png
 ---
 <center><iframe width="853" height="505" src="{{ page.video }}" frameborder="0" allowfullscreen></iframe></center>
 <center>Up Diamond Creek Into the Burn</center>
