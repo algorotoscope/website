@@ -8,8 +8,8 @@ tags:
   - Oakland
   - California
   - Cities
-feature: ../../images/collections/oakland-california/oakland-california.jpg
-image: ../../images/collections/oakland-california/oakland-california.jpg
+feature: ../../images/collections/oakland-california/oakland-california.jpeg
+image: ../../images/collections/oakland-california/oakland-california.jpeg
 images:
   - name: Bus Station
     image: oakland-california-bus-station.jpeg

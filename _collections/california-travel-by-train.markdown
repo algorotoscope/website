@@ -3,14 +3,14 @@ published: true
 layout: collection
 title: California Travel by Train
 description: I am spending a lot of time traveling around California these days, thinking about the California ideology, and how it as contributed to the digital world we are building. California has a lot of history that gts lost in the stories we tell, polishing over much of what we actually see in the real world with online images of what we want to see.
-date: 2023-01-14T09:00:00.000Z
+date: 2023-01-15T09:00:00.000Z
 tags:
   - California
   - Travel
   - Train
   - Natural
-feature: ../../images/collections/california-travel-by-train/california-travel-by-train.jpg
-image: ../../images/collections/california-travel-by-train/california-travel-by-train.jpg
+feature: ../../images/collections/california-travel-by-train/california-travel-by-train.jpeg
+image: ../../images/collections/california-travel-by-train/california-travel-by-train.jpeg
 images:
   - name: Hanger
     image: california-travel-by-train-building-hanger.jpeg
