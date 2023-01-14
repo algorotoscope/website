@@ -12,7 +12,7 @@ title: Kin Lane
 	<p>These are some collections of photos I have pulled together to further demonstrate how I am stealing from the works of others using technology to show how technology is stealing from us, and distorting almost everything around us on and offline. The motives behind this distortion is nothing new, but is finding a new home when it comes to the algorithms that are increasingly governing the world around us.</p>
 
 	<div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
-	{% assign collections = site.collections | sort: 'date' | sort: 'date' %}
+	{% assign collections = site.collections | reverse %}
 	{% for collection in site.collections %}
 	{% assign slug = collection.title | replace: " ", "-" | downcase %}
 		<div style="width: 300px;">
