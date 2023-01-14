@@ -3,6 +3,21 @@
   
     
     <url>
+      <loc>http://localhost:4000/2023/01/14/rebuilding-the-texture-transfer-ml-process/</loc>
+      
+        <lastmod>2023-01-14T04:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/2020/05/16/landiing-on-a-stable-instance-of-tensorflow-on-amazon-to-train-models/</loc>
       
         <lastmod>2020-05-16T05:00:00-07:00</lastmod>
@@ -261,7 +276,7 @@
     <url>
       <loc>http://localhost:4000/404.html</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -276,7 +291,7 @@
     <url>
       <loc>http://localhost:4000/atom.xml</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -291,7 +306,7 @@
     <url>
       <loc>http://localhost:4000/contact/</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -306,7 +321,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -321,7 +336,7 @@
     <url>
       <loc>http://localhost:4000/images/</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -336,7 +351,7 @@
     <url>
       <loc>http://localhost:4000/updates/</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -351,7 +366,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -366,7 +381,7 @@
     <url>
       <loc>http://localhost:4000/assets/css/main.css</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -381,7 +396,7 @@
     <url>
       <loc>http://localhost:4000/search.json</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -398,7 +413,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2022-10-16T07:49:06-07:00</lastmod>
+        <lastmod>2023-01-14T13:58:53-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

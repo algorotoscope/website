@@ -13,7 +13,7 @@ title: Kin Lane
 
 	<div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
 	{% assign collections = site.collections | reverse %}
-	{% for collection in site.collections %}
+	{% for collection in collections %}
 	{% assign slug = collection.title | replace: " ", "-" | downcase %}
 		<div style="width: 300px;">
 			<div>

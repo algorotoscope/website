@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "Rebuilding the Texture Transfer ML Process",
+      "tags"     : "Models, Machine Learning, Amazon Web Services, Texture Transfer",
+      "url"      : "/2023/01/14/rebuilding-the-texture-transfer-ml-process/",
+      "date"     : "2023-01-14 12:00:00 +0000"
+    } ,
+  
+    {
       "title"    : "Landing on a Stable Instance of Tensorflow on Amazon to Train Models",
       "tags"     : "Collections, Models",
       "url"      : "/2020/05/16/landiing-on-a-stable-instance-of-tensorflow-on-amazon-to-train-models/",
