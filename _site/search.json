@@ -1,9 +1,23 @@
 [
   
     {
+      "title"    : "Why I Do Algorotoscope",
+      "tags"     : "Models, Machine Learning, Amazon Web Services, Texture Transfer",
+      "url"      : "/2023/01/14/why-i-do-algorotoscope/",
+      "date"     : "2023-01-14 12:00:00 +0000"
+    } ,
+  
+    {
       "title"    : "Rebuilding the Texture Transfer ML Process",
       "tags"     : "Models, Machine Learning, Amazon Web Services, Texture Transfer",
       "url"      : "/2023/01/14/rebuilding-the-texture-transfer-ml-process/",
+      "date"     : "2023-01-14 12:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Rebuilding the Texture Transfer ML Process",
+      "tags"     : "Models, Machine Learning, Amazon Web Services, Texture Transfer",
+      "url"      : "/2023/01/14/flipping-the-polarity-of-the-relationship-between-models-and-images/",
       "date"     : "2023-01-14 12:00:00 +0000"
     } ,
   

@@ -6,6 +6,12 @@
   <author><name>Kin Lane</name></author>
   <id>http://localhost:4000/atom.xml</id>
 	<entry>
+    <title>Why I Do Algorotoscope</title>
+    <link href="http://apievangelist.com/2023/01/14/why-i-do-algorotoscope/"/>
+    <updated>2023-01-14T12:00:00Z</updated>
+    <content><![CDATA[I started Algorotoscope as an escape from the 2016 election. I wanted to learn more about machine learning and TensorFlow while simultaneously wanting to escape the world. Once I established a working model I wanted to get out in the world more to take photos and videos. I lost the Amazon Machine Image (AMI) for my Algorotoscope process as part of switching accounts, so I haven’t produced anything new in a while. I am just working from images I have already applied my models. Now I have my AMI and a newly optimized process for producing texture transfer models, but also applying them to large amounts of images. So, I am looking to continue my exploration, with an emphasis on being out in the world taking photos that speak to the characteristics of each ML model, applying to my new and old images, and telling stories that support them. If I have to reaffirm why I do Algorotoscope. It is less about learning ML or escaping the world now. I’d say it is about exploring the world. Finding relevant images I can train models on and then going out in the world to take photographs and film videos that leverage the strengths of each of the models. Visually and contextually. I just don’t want to be a one trick pony with the dark models applied to every day images. I want to come at it from multiple dimensions, reflecting on both the physical and digital spaces we live in. The overlap of the two. The obfuscation. The reality distortion field that consumes us online, but then also colors, paints, and texturizes the actual world around us. To understand where I am coming from, it helps to understand how I see the world around us. I see APIs. I see millions of digital interfaces distorting our worlds. Some recent examples can be found with Facebook, Twitter, and the 2016 election, or how our legal system is being automated with algorithms Human Resources for our companies are flowing through these pipes, deciding who they hire and who they don’t. I see our world flowing through Apis each day, and I see how existing biases are being codified in these pipes and gears that our powering not just our online lives, but our physical world. This is why I publish Algorotoscope images with each post you see on API Evangelist—it is a visual representation of the space I’m telling a story in. I need a steady stream of images that are relevant to how I am describing the knobs, levers, and gears of the machine, but also with some context of the bias being baked in. Algorotoscope is how I show how I see the digital world consuming our physical worlds. Consuming, then dictating and shaping our lives. I don’t know how else to illustrate it. I am a software engineer, architect, and storyteller. I can’t draw this shit. I can only express it using ML and photographing—two things I cam capable of...]]></content>
+    <id>http://apievangelist.com/2023/01/14/why-i-do-algorotoscope/</id>
+  </entry><entry>
     <title>Rebuilding the Texture Transfer ML Process</title>
     <link href="http://apievangelist.com/2023/01/14/rebuilding-the-texture-transfer-ml-process/"/>
     <updated>2023-01-14T12:00:00Z</updated>
@@ -16,6 +22,26 @@ I am using lengstrom/fast-style-transfer for my texture transfer process. It rea
 Like many things, this approach to doing texture transfer will fall victim to what is next. You already see this happening with MidJourney and Dall-E approaches to images ML. It is compelling, exciting, and superior to what came before. I am just going to fork what is and keep applying in my own way off over here in this cul-de-sac. I’ll pay attention to what is new, cause I can’t help it, but I will also be experimenting with what was. For me, the layer of expression uses this particular ML model, but also a mix of textures and photos to find the sweet spot. Honestly, this sweet spot varies depending on what my mood is, how I am feeling about the world, and whether I have the money to create a new model or experiment with  the ones I already have.
 ]]></content>
     <id>http://apievangelist.com/2023/01/14/rebuilding-the-texture-transfer-ml-process/</id>
+  </entry><entry>
+    <title>Rebuilding the Texture Transfer ML Process</title>
+    <link href="http://apievangelist.com/2023/01/14/flipping-the-polarity-of-the-relationship-between-models-and-images/"/>
+    <updated>2023-01-14T12:00:00Z</updated>
+    <content><![CDATA[Historically the ML models I have trained for Algorotoscope have been fairly dark in nature. I had the training wheels of the models that came with the ML process that I adopted, but then I quickly began training on Salvador Dali and playing around with a distortion in time, but then found myself drowning in Nazi and Russian propaganda. I would take these models and apply them to normal everyday photos I have taken—obfuscating the darkness in the texture applied to each photo. Now, I am flipping the polarity, training more positive models, but then applying them to darker photos, experimenting with how I can further obfuscate the real world around was with digital textures. I have two models to demonstrate how I am seeing things.
+
+Train Travel to California
+
+Applied to Train Travel in California
+
+Oakland, California Bridge
+￼
+Applied to Oakland, California Bridge
+￼
+
+Early on in my exploration I wanted to take previous propaganda and make pictures distorted in an algorithmic way using this old world images. Now I am feeling like I want to take old world marketing and use it to distort in an algorithmic way the photos I am taking as I walk around my community, state, and wider. As always, I have no idea where I am going with this. I am just exploring machine learning in my own way, taking photographs, and playing around with how I can mix the two to say something.
+
+I historically have used my images in my storytelling on API Evangelist. Using everyday photos that are obfuscated with some pretty dark propaganda from our pasts to quietly show the distortion field that is being created using APIs. These new round of photos most likely will have no place in my API Evangelist storytelling, pushing me to use on my Alternate channels, Kin Lane, and other places I am expressing myself online. I am happy that I finally have my text transfer ML process back working, and I also now have two more models to play with when it comes to applying to photos. I’ll keep learning where these photos translate best. How the clouds, rocks, buildings, people, and other real world objects get obfuscated, and I’ll work to take photos that bring this out in new and interesting ways.
+]]></content>
+    <id>http://apievangelist.com/2023/01/14/flipping-the-polarity-of-the-relationship-between-models-and-images/</id>
   </entry><entry>
     <title>Landing on a Stable Instance of Tensorflow on Amazon to Train Models</title>
     <link href="http://apievangelist.com/2020/05/16/landiing-on-a-stable-instance-of-tensorflow-on-amazon-to-train-models/"/>
