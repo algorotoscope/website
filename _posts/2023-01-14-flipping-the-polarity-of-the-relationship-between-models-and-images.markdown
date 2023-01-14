@@ -15,10 +15,13 @@ Historically the ML models I have trained for Algorotoscope have been fairly dar
 
 ## Train Travel to California
 ![Train Travel to California](https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train.jpeg)
+
 ## Applied to Train Travel in California
 ![Applied to Train Travel in California](https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train-freeway-interchange-fence.jpg)
+
 ## Oakland, California Bridge
 ![Oakland, California Bridge](https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california.jpeg)￼
+
 ## Applied to Oakland, California Bridge
 ![Applied to Oakland, California Bridge](https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california-freeway-camp.jpg)￼
 
