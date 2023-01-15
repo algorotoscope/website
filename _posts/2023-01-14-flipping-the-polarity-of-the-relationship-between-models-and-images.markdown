@@ -14,16 +14,16 @@ image: >-
 Historically the ML models I have trained for Algorotoscope have been fairly dark in nature. I had the training wheels of the models that came with the ML process that I adopted, but then I quickly began [training on Salvador Dali and playing around with a distortion in time](https://algorithmic.rotoscope.work/collections/the-persistence-of-memory/), but then found myself drowning in Nazi and Russian propaganda. I would take these models and apply them to normal everyday photos I have taken—obfuscating the darkness in the texture applied to each photo. Now, I am flipping the polarity, training more positive models, but then applying them to darker photos, experimenting with how I can further obfuscate the real world around was with digital textures. I have two models to demonstrate how I am seeing things.
 
 ## Train Travel to California
-![Train Travel to California](https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train.jpeg)
+<img src="https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train.jpeg" width="100%" align="center" title="Train Travel to California">
 
 ## Applied to Train Travel in California
-![Applied to Train Travel in California](https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train-freeway-interchange-fence.jpg)
+<img src="https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train-freeway-interchange-fence.jpg" width="100%" align="center" title="Applied to Train Travel in California">
 
 ## Oakland, California Bridge
-![Oakland, California Bridge](https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california.jpeg)￼
+<img src="https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california.jpeg" width="100%" align="center" title="Oakland, California Bridge">
 
 ## Applied to Oakland, California Bridge
-![Applied to Oakland, California Bridge](https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california-freeway-camp.jpg)￼
+<img src="https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california-freeway-camp.jpg" width="100%" align="center" title="Applied to Oakland, California Bridge">
 
 Early on in my exploration I wanted to take previous propaganda and make pictures distorted in an algorithmic way using this old world images. Now I am feeling like I want to take old world marketing and use it to distort in an algorithmic way the photos I am taking as I walk around my community, state, and wider. As always, I have no idea where I am going with this. I am just exploring machine learning in my own way, taking photographs, and playing around with how I can mix the two to say something.
 

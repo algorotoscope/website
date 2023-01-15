@@ -17,7 +17,7 @@
     <updated>2023-01-14T12:00:00Z</updated>
     <content><![CDATA[I had an AWS machine image that had my texture transfer process all setup. I had my AWS account compromised and someone spun up servers across almost every AWS region—my bill was pushing $25K. Luckily it was due to anything I had done and AWS didn’t charge me for any of it. However, in the shuffle from that account to a new API Evangelist specific account, my AWS machine image got lost—forcing me to have to rebuild from scratch. It is always a daunting thing to dive back into the world of TensorFlow and machine learning, but I finally made time over this last holidays season.
 
-
+&amp;lt;img src=https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california-bus-station.jpg”” width=”100%” align=”center” title=”Bus Station”&amp;gt;
 
 I am using lengstrom/fast-style-transfer for my texture transfer process. It really isn’t that hard to implement, but every time there is some learning curve around getting the server setup, all the TensorFlow libraries properly setup, and he keeps updating his process. This round I saw he was using Jupiter Notebooks, which I am not that interested in using, so I beat my own path forward. I am glad I did it one more time because there are a number of libraries I had to find from Archive.org to get to work, but finally I ended up with a working implementation. This time I have backed up on S3, and a local location. Ensuring that even if I lose my AMI I won’t lose the whole approach, cause I don’t think I will be able to rebuild again. The web is fragile that way. Not all of this is due to technical fragility, it is due to business fragility, disposability, and velocity.
 
@@ -39,10 +39,10 @@ Applied to Train Travel in California
 
 
 Oakland, California Bridge
-￼
+
 
 Applied to Oakland, California Bridge
-￼
+
 
 Early on in my exploration I wanted to take previous propaganda and make pictures distorted in an algorithmic way using this old world images. Now I am feeling like I want to take old world marketing and use it to distort in an algorithmic way the photos I am taking as I walk around my community, state, and wider. As always, I have no idea where I am going with this. I am just exploring machine learning in my own way, taking photographs, and playing around with how I can mix the two to say something.
 
