@@ -9,7 +9,7 @@ tags:
   - Amazon Web Services
   - Texture Transfer
 image: >-
-  https://algorithmic.rotoscope.work/images/collections/copper-circuit/supply-chain.jpg
+  https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california.jpeg
 ---
 I had an AWS machine image that had my texture transfer process all setup. I had my AWS account compromised and someone spun up servers across almost every AWS region—my bill was pushing $25K. Luckily it was due to anything I had done and AWS didn’t charge me for any of it. However, in the shuffle from that account to a new API Evangelist specific account, my AWS machine image got lost—forcing me to have to rebuild from scratch. It is always a daunting thing to dive back into the world of TensorFlow and machine learning, but I finally made time over this last holidays season. 
 
