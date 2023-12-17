@@ -13,17 +13,41 @@ tags:
 feature: ../../images/collections/russian-propaganda/propagandaleaflets-feature.jpg
 image: ../../images/collections/russian-propaganda/propagandaleaflets.jpg
 images:
-  - name: Invading Our Shores
-    image: invading-shores.jpg
-  - name: Hollywood
-    image: los-angeles-hollywood.jpg
-  - name: Power
-    image: power-lines.jpg
-  - name: San Francisco
-    image: san-francisco.jpg
   - name: White House
     image: white-house.jpg
   - name: West Wing
     image: white-house-eeob.jpg
+  - name: Electric Tower
+    image: leaflets-of-the-russian-revolution-electric-tower-sun-behind.jpeg
+  - name: Los Angeles
+    image: leaflets-of-the-russian-revolution-going-to-dowtown-los-angeles.jpeg
+  - name: Hollywood
+    image: leaflets-of-the-russian-revolution-hollywood-sign-with-tower.jpeg
+  - name: Invasion
+    image: leaflets-of-the-russian-revolution-jets-over-city.jpeg
+  - name: Apocalypse
+    image: leaflets-of-the-russian-revolution-los-angeles-downtown-from-afar.jpeg
+  - name: Radio
+    image: leaflets-of-the-russian-revolution-radio-antanae.jpeg
+  - name: San Francisco
+    image: leaflets-of-the-russian-revolution-san-francisco-skyline.jpeg
+  - name: Liberty
+    image: leaflets-of-the-russian-revolution-statue-of-liberty.jpeg
+  - name: Supreme Court
+    image: leaflets-of-the-russian-revolution-supreme-court.jpeg
+  - name: Times Square
+    image: leaflets-of-the-russian-revolution-times-square-up-road.jpeg
+  - name: Trains
+    image: leaflets-of-the-russian-revolution-train-nyc-125th.jpeg
+  - name: Garden
+    image: leaflets-of-the-russian-revolution-walk-through-garden-tunnel.jpeg
+  - name: Washington
+    image: leaflets-of-the-russian-revolution-washington-monument-afar.jpeg
+  - name: White House
+    image: leaflets-of-the-russian-revolution-whie-house-close-up-2.jpeg
+  - name: Eagle
+    image: leaflets-of-the-russian-revolution-eagle-spread-tree-2.jpeg
+  - name: Water Tower
+    image: leaflets-of-the-russian-revolution-edgefield-2.jpeg    
 ---
 {% include collection.html %}

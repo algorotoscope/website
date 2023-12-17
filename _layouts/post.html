@@ -13,7 +13,7 @@ layout: default
             </div>
 
             <div class="article-content link-primary">
-                <center><img src="{{ page.image }}" width="90%" align="center" style="padding: 5px;"></center>
+                <center><a href="{{ page.image }}" target="_blank"><img src="{{ page.image }}" width="90%" align="center" style="padding: 5px;"></a></center>
                 {{ content }}
                 {% if site.share.post %}
                     {% include share.html %}

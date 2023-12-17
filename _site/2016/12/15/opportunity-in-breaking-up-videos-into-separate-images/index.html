@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Opportunity In Breaking Up Videos Into Separate Images | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Opportunity In Breaking Up Videos Into Separate Images" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I have been working my way through about 300 GB of drone and GoPro videos from this summer. One of the lingering thoughts I was having throughout this process centered around the concept of breaking videos up into individual slides. Once I stumbled across Algorithmia&#39;s Deep Learning, I found myself thinking about how I could break up videos into separate images, and apply algorithmic texture filters to each individual image, and then reassemble back into a video. FFMPEG stood out as the solution I needed to accomplish this. It was pretty easy to export each video as separate .jpg files, as well as the ability to assemble any images into a video. What did take me some time was getting the frame rate, size, and other finer aspects of video to work as I desired, and in sync with my drone videos. To achieve an acceptable video I needed 60 individual images for each second of video, potentially making the work a compute and storage intensive endeavor. Using Amazon EC2 and S3 it isn&#39;t too much work to leverage FFMPEG to break up videos into separate images. Once I did this, I started publishing a JSON representation of each video, along with each individual image to Github, leverage version control, forking, and the other benefits of the platform, but for use in managing a video, instead of code. This process has given each of my videos, a machine readable, Git managed the representation of each video for me to work with, manipulate, and evolve independently. When you combine the separation of video, with Github in this way, with an API-driven approach to separation, assembly, as well as individual and overall image manipulation, the possibilities are pretty limitless. After I separate out each video into images, I am then applying textures and filters to each individual image using Algorithmia&#39;s deep filters, a process that has numerous opportunities, but I think the wider approach holds more potential than just fun filters. This approach is the primary reason I did this work. Playing with the videos, filters, and images was a welcome distraction, but I think the opportunity around breaking up videos into separate images is much bigger than algorithmic rotoscope." />
+<meta property="og:description" content="I have been working my way through about 300 GB of drone and GoPro videos from this summer. One of the lingering thoughts I was having throughout this process centered around the concept of breaking videos up into individual slides. Once I stumbled across Algorithmia&#39;s Deep Learning, I found myself thinking about how I could break up videos into separate images, and apply algorithmic texture filters to each individual image, and then reassemble back into a video. FFMPEG stood out as the solution I needed to accomplish this. It was pretty easy to export each video as separate .jpg files, as well as the ability to assemble any images into a video. What did take me some time was getting the frame rate, size, and other finer aspects of video to work as I desired, and in sync with my drone videos. To achieve an acceptable video I needed 60 individual images for each second of video, potentially making the work a compute and storage intensive endeavor. Using Amazon EC2 and S3 it isn&#39;t too much work to leverage FFMPEG to break up videos into separate images. Once I did this, I started publishing a JSON representation of each video, along with each individual image to Github, leverage version control, forking, and the other benefits of the platform, but for use in managing a video, instead of code. This process has given each of my videos, a machine readable, Git managed the representation of each video for me to work with, manipulate, and evolve independently. When you combine the separation of video, with Github in this way, with an API-driven approach to separation, assembly, as well as individual and overall image manipulation, the possibilities are pretty limitless. After I separate out each video into images, I am then applying textures and filters to each individual image using Algorithmia&#39;s deep filters, a process that has numerous opportunities, but I think the wider approach holds more potential than just fun filters. This approach is the primary reason I did this work. Playing with the videos, filters, and images was a welcome distraction, but I think the opportunity around breaking up videos into separate images is much bigger than algorithmic rotoscope." />
+<link rel="canonical" href="http://localhost:4000/2016/12/15/opportunity-in-breaking-up-videos-into-separate-images/" />
+<meta property="og:url" content="http://localhost:4000/2016/12/15/opportunity-in-breaking-up-videos-into-separate-images/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-12-15T00:48:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Opportunity In Breaking Up Videos Into Separate Images" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2016-12-15T00:48:00-05:00","datePublished":"2016-12-15T00:48:00-05:00","description":"I have been working my way through about 300 GB of drone and GoPro videos from this summer. One of the lingering thoughts I was having throughout this process centered around the concept of breaking videos up into individual slides. Once I stumbled across Algorithmia&#39;s Deep Learning, I found myself thinking about how I could break up videos into separate images, and apply algorithmic texture filters to each individual image, and then reassemble back into a video. FFMPEG stood out as the solution I needed to accomplish this. It was pretty easy to export each video as separate .jpg files, as well as the ability to assemble any images into a video. What did take me some time was getting the frame rate, size, and other finer aspects of video to work as I desired, and in sync with my drone videos. To achieve an acceptable video I needed 60 individual images for each second of video, potentially making the work a compute and storage intensive endeavor. Using Amazon EC2 and S3 it isn&#39;t too much work to leverage FFMPEG to break up videos into separate images. Once I did this, I started publishing a JSON representation of each video, along with each individual image to Github, leverage version control, forking, and the other benefits of the platform, but for use in managing a video, instead of code. This process has given each of my videos, a machine readable, Git managed the representation of each video for me to work with, manipulate, and evolve independently. When you combine the separation of video, with Github in this way, with an API-driven approach to separation, assembly, as well as individual and overall image manipulation, the possibilities are pretty limitless. After I separate out each video into images, I am then applying textures and filters to each individual image using Algorithmia&#39;s deep filters, a process that has numerous opportunities, but I think the wider approach holds more potential than just fun filters. This approach is the primary reason I did this work. Playing with the videos, filters, and images was a welcome distraction, but I think the opportunity around breaking up videos into separate images is much bigger than algorithmic rotoscope.","headline":"Opportunity In Breaking Up Videos Into Separate Images","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2016/12/15/opportunity-in-breaking-up-videos-into-separate-images/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/2016/12/15/opportunity-in-breaking-up-videos-into-separate-images/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="http://algorithmic.rotoscope.work//2016/12/14/opportunity-in-breaking-up-videos-into-separate-images/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Opportunity In Breaking Up Videos Into Separate Images | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="http://algorithmic.rotoscope.work//2016/12/14/opportunity-in-breaking-up-videos-into-separate-images/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Opportunity In Breaking Up Videos Into Separate Images | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="The ramblings, thoughts, and channeling of Kin Lane.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/">Algorotoscope.Work</a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/updates/" >Updates</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Opportunity In Breaking Up Videos Into Separate Images</h1>
+
+            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                
+
+
+  
+  <img class="uk-border-circle avatar" src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png" alt="Kin Lane">
+
+
+<div>
+  
+    Written by 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Kin Lane 
+        
+        
+        
+              
+      </span>
+    </span><br>
+  
+  <time datetime="2016-12-15T00:48:00-05:00" itemprop="datePublished">
+    
+    Dec 15, 2016
+  </time>
+</div>
+            </div>
+
+            <div class="article-content link-primary">
+                <center><a href="" target="_blank"><img src="" width="90%" align="center" style="padding: 5px;"></a></center>
+                <p>I have been working my way through about 300 GB of drone and GoPro videos from this summer. One of the lingering thoughts I was having throughout this process centered around the concept of breaking videos up into individual slides. Once I stumbled across <a href="https://algorithmia.com/algorithms/deeplearning/DeepFilter">Algorithmia's Deep Learning</a>, I found myself thinking about how I could break up videos into separate images, and apply algorithmic texture filters to each individual image, and then reassemble back into a video.</p>
+<p><a href="https://ffmpeg.org/">FFMPEG</a> stood out as the solution I needed to accomplish this. It was pretty easy to export each video as separate .jpg files, as well as the ability to assemble any images into a video. What did take me some time was getting the frame rate, size, and other finer aspects of video to work as I desired, and in sync with my drone videos. To achieve an acceptable video I needed 60 individual images for each second of video, potentially making the work a compute and storage intensive endeavor.</p>
+<p>Using Amazon EC2 and S3 it isn't too much work to leverage FFMPEG to break up videos into separate images. Once I did this, I started publishing a JSON representation of each video, along with each individual image to Github, leverage version control, forking, and the other benefits of the platform, but for use in managing a video, instead of code. This process has given each of my videos, a machine readable, Git managed the representation of each video for me to work with, manipulate, and evolve independently. </p>
+<p>When you combine the separation of video, with Github in this way, with an API-driven approach to separation, assembly, as well as individual and overall image manipulation, the possibilities are pretty limitless. After I separate out each video into images, I am then applying textures and filters to each individual image using Algorithmia's deep filters, a process that has numerous opportunities, but I think the wider approach holds more potential than just fun filters. This approach is the primary reason I did this work. Playing with the videos, filters, and images was a welcome distraction, but I think the opportunity around breaking up videos into separate images is much bigger than <a href="http://algorithmic.rotoscope.work">algorithmic rotoscope</a>.</p>
+
+                
+                    <div class="share uk-text-center uk-margin-medium-top">
+    
+        <a class="uk-link-muted" href="https://twitter.com/intent/tweet?text=Opportunity In Breaking Up Videos Into Separate Images&url=http://localhost:4000/2016/12/15/opportunity-in-breaking-up-videos-into-separate-images/&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span data-uk-icon="icon: twitter; ratio: 1.2"></span></a>
+    
+    
+        <a class="uk-link-muted uk-margin-small-left" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2016%2F12%2F15%2Fopportunity-in-breaking-up-videos-into-separate-images%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span data-uk-icon="icon: facebook; ratio: 1.2"></span></a>
+    
+</div>
+                
+            </div>
+
+            <hr class="uk-margin-medium">
+
+            <div class="uk-margin-large-top paginate-post">
+    <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+        <div>
+            
+                <div><a class="remove-underline hvr-back" href="/2016/12/05/algorithmic-rotoscope/">&larr; Previous</a></div>
+            
+        </div>
+        <div>
+            
+                <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/2016/12/16/unique-algorithmic-filters-is-where-it-is-at/">Next &rarr;</a></div>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+<div>
+    <a href="https://github.com/kinlane" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="http://kinlane.com" target="_blank" >Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/kinlane" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/kinlane" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+<div>
+    <a href="https://www.linkedin.com/in/kinlane/" data-uk-icon="icon: linkedin" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+<div>
+    <a href="https://github.com/kinlane" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

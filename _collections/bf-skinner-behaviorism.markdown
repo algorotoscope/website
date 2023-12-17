@@ -29,5 +29,29 @@ images:
     image: bf-skinner-docs-cranes-waterfront.jpg
   - name: Surveillance Education
     image: bf-skinner-surveillance-3-camers.jpg
+  - name: Tech Policy
+    image: bf-skinner-white-house-press-room-flag.jpeg
+  - name: Content
+    image: bf-skinner-fat-old-pigeon-on-fence.jpeg
+  - name: Children
+    image: bf-skinner-grafitti-woman-bangs.jpeg
+  - name: Hiding
+    image: bf-skinner-hiding-monster-statue.jpeg
+  - name: Horrified
+    image: bf-skinner-horrified-statue.jpeg
+  - name: Ledge
+    image: bf-skinner-pigeons-on-ledge.jpeg
+  - name: Sheep
+    image: bf-skinner-sheep-grazing-grass-green.jpeg
+  - name: Woman
+    image: bf-skinner-statue-woman.jpeg
+  - name: In Corner
+    image: bf-skinner-surveillance-cameras-in-corner.jpeg
+  - name: Over City
+    image: bf-skinner-surveillance-over-the-city.jpeg
+  - name: Switch
+    image: bf-skinner-train-switch.jpeg
+  - name: Together
+    image: bf-skinner-two-statues-rock.jpeg
 ---
 {% include collection.html %}
