@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Kin Lane</title>
-  <updated>2023-01-14T07:00:00Z</updated>
+  <updated>2023-12-17T07:00:00Z</updated>
   <link rel="self" href="http://localhost:4000/atom.xml"/>
   <author><name>Kin Lane</name></author>
   <id>http://localhost:4000/atom.xml</id>
 	<entry>
+    <title>Seeing the Machine</title>
+    <link href="http://apievangelist.com/2023/12/17/seeing-the-machine/"/>
+    <updated>2023-12-17T07:00:00Z</updated>
+    <content><![CDATA[I wish I could paint the pictures I have in my head from my work as the API Evangelist. The closest I can come is project light and transforming images as part of my Algorotoscope Work. Some day my painting skills may get me closer to what I see emerging around us, but for right now my Algorotoscope Work is the closest I got. I am just turning the knobs and dials on the Algorotoscope lens I’ve created, until the reception gets better, and I find the image I am looking for. I am not using ChatGPT or some other more modern AI, I am using the previous generation of AI to steal meaning from a variety of existing art, posters, and other images, then I am applying the resulting texture transfer to photos I have taken. I am using the ways I see the Internet and algorithms are amplifying existing bias and beliefs to render and produce images that help highlight the algorithmic obfuscation occurring all around us each day via our mobile phones, laptops, desktops, televisions, automobiles, and other Internet connected devices. I am exploring inside what began as a piano player and has not grown into a global digital sprawl. APIs are connecting the world through each mobile phone, television, and security camera installed. Think of Algorotoscoipe as what the security cameras see when scanning the digital realm that exists between our physical and virtual realms. Algorotoscope is about revealing what lies in between, and shines a light on what the Internet is doing to us while it surveys us, watches us, and controls us. Skinner was all about behaviorism, and the Internet is behaviorism run wild. It isn’t that Skinner was wrong, he was right. We all respond to positive reinforcement, and the Internet is being designed to hit on all of the right dopamine receptors with the reinforcement we desire. The government is waking up to this reality, and Lina Khan’s Federal Trade Commission is trying to find the regulatory antidote, but the machine has already grown so large and controlling, it feels almost too late. I don’t think we fully understand what the Internet is doing to us, let alone to our children. I think we are flying blind and willfully ignorant about the negative impacts of technology that makes lots of money. I don’t think our early concerns around Internet surveillance at all speak to the real harm being done, and I don’t think we have the vocabulary to make sense of things. I worry about what we are training the next generations of human beings to live for, and I think we are leaving a huge burden on future generations. The anxiety that an online reality is giving us is going to lead to so many real world challenges. I don’t feel as equipped to deal with the world as I used, and I remember the times before. I fear how Internet induced anxiety is going to shift how our children live...]]></content>
+    <id>http://apievangelist.com/2023/12/17/seeing-the-machine/</id>
+  </entry><entry>
     <title>Why I Do Algorotoscope</title>
     <link href="http://apievangelist.com/2023/01/14/why-i-do-algorotoscope/"/>
     <updated>2023-01-14T07:00:00Z</updated>

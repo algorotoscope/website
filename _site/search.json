@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "Seeing the Machine",
+      "tags"     : "Visual, Machine, Internet, Gears",
+      "url"      : "/2023/12/17/seeing-the-machine/",
+      "date"     : "2023-12-17 07:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Why I Do Algorotoscope",
       "tags"     : "Models, Machine Learning, Amazon Web Services, Texture Transfer",
       "url"      : "/2023/01/14/why-i-do-algorotoscope/",
