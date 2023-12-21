@@ -9,7 +9,7 @@ tags:
   - Internet
   - Gears
 image: >-
-  https://s3.amazonaws.com/kinlane-productions2/algorotoscope-master/copper-circuit-kin-chesapeake.jpeg
+  https://kinlane-productions2.s3.amazonaws.com/algo-rotoscope/bf-skinner/bf-skinner-alan-turing-side.jpg
 ---
 I wish I could paint the pictures I have in my head from my work as the API Evangelist. The closest I can come is projecting light and transforming images as part of my Algorotoscope Work. Some day my painting skills may get me closer to what I see emerging around us, but for right now my <a href="https://algorithmic.rotoscope.work/">Algorotoscope Work</a> is the closest I got. I am just turning the knobs and dials on the Algorotoscope lenses I have created, until the reception gets better, and I find the images I am looking for.
 
