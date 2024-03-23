@@ -15,6 +15,8 @@ I spent some time making some new images with my B.F. Skinner Algorotoscope mode
 
 To demonstrate what I am talking about I produced three separate images to support a fictional story I wrote called [Revealing the Cybernetic Gears in Our Everyday Life](https://alternate.kinlane.com/2024/03/17/revealing-the-cybernetic-gears-in-our-everyday-life/). I am looking to highlight the control Internet technology has on use using both my B.F. Skinner and [Copper Circuit Algorotoscope models](https://algorithmic.rotoscope.work/collections/copper-circuit/), to bring my story about cybernetic gears to life.
 
+<p align="center"><img src="https://kinlane-productions2.s3.amazonaws.com/algorotoscope-composites/bf-skinner-woman-walking-on-phone-store-3.jpg" width="100%"></p>
+
 <p align="center"><img src="https://kinlane-productions2.s3.amazonaws.com/algorotoscope-composites/bf-skinner-e-bike-delivery-in-road-on-phone-combined-3.jpg" width="100%"></p>
 
 <p align="center"><img src="https://kinlane-productions2.s3.amazonaws.com/algorotoscope-composites/bf-skinner-woman-walking-on-phone-scaffolding-3.jpg" width="100%"></p>
