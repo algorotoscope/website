@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Kin Lane</title>
-  <updated>2023-12-17T07:00:00Z</updated>
+  <updated>2024-03-23T08:00:00Z</updated>
   <link rel="self" href="http://localhost:4000/atom.xml"/>
   <author><name>Kin Lane</name></author>
   <id>http://localhost:4000/atom.xml</id>
 	<entry>
+    <title>Composite Algorotoscope Images</title>
+    <link href="http://apievangelist.com/2024/03/23/composite-algorotoscope-images/"/>
+    <updated>2024-03-23T08:00:00Z</updated>
+    <content><![CDATA[I spent some time making some new images with my B.F. Skinner Algorotoscope models the other weekend. I am pretty happy with my pallet of AI models right now. I need to get them better displays don the site, but the tones of them represent many of the emotions I am trying to illuminate right now. However, in th mean time I am now exploring how I can better overlay images produced from different Algorotoscope models. The B.F. Skinner Algorotoscope model sets the stage for many technological stories I am wanting to tell. It has the overall tone I am looking for, but I also want to be able to highlight or diff something within the image with an overlay of another Algorotoscope image.
+
+To demonstrate what I am talking about I produced three separate images to support a fictional story I wrote called Revealing the Cybernetic Gears in Our Everyday Life. I am looking to highlight the control Internet technology has on use using both my B.F. Skinner and Copper Circuit Algorotoscope models, to bring my story about cybernetic gears to life.
+
+
+
+
+
+
+
+
+
+I am fascinated with the behavioral influence of our mobile applications, which are of course API-driven. I like potential of my models to transform the landscape, but also obfuscate and transform the people I come across. I am not looking to shame anyone on their mobile phone walking the streets of New York, but I am looking to push us to think about why we do this. I spend a lot of time thinking about this as I walk to and from work in mid-town Manhattan each day.
+
+This is just my first set of composite Algorotoscope images that utilize images produced from two separate models. I am going to explore other combinations with my Birth of a Nation and John Wayne backdrops, utilizing my Gone With the Wind model for illuminating things within each image. I think I’ll explore blue, green, and purple circuits to further compliment my B.F. Skinner model. It is pushing how I think about models, but also how I go out in the world and take picture, or re-evaluate photos I have already taken in the past. I think this is the Algorotoscope dimension I will play in for a while before I spend any more time and money on training models.
+]]></content>
+    <id>http://apievangelist.com/2024/03/23/composite-algorotoscope-images/</id>
+  </entry><entry>
+    <title>I Am Not Well</title>
+    <link href="http://apievangelist.com/2024/02/22/i-am-not-well/"/>
+    <updated>2024-02-22T07:00:00Z</updated>
+    <content><![CDATA[I am not well. I have something systemic wrong with me. I am not responsible for its origins, but I am responsible for perpetuating it. It is a condition that is difficult to see despite being ubiquitous throughout our lives.
+
+Most white men know something is wrong with us. The gravity is just different. We are weaker. We are more sensitive, despite being so masculine. Our physical and mental condition is not accustom to adversity and diverse voices in our head.
+
+
+
+We have been fed a steady diet of lies since we first could speak. Our fathers and brothers reinforced this condition, handing it down through the generations. Society has also upheld these lies, with Hollywood bringing it all home for us.
+
+I spent many years seeing this as being your disease, not mine. I have come to learn that it is our disease. There is no escaping it. You won’t be able to avoid the coming reckoning by living in a small town or building a bunker—it is too systemic.
+
+I do not see nay way out, or a way to fix this. I only see addressing it head on out in the open. Then maybe over time we can collectively overcome and begin to shift things to a healthier state. Which is why I write about it as honestly as I can.
+]]></content>
+    <id>http://apievangelist.com/2024/02/22/i-am-not-well/</id>
+  </entry><entry>
     <title>Seeing the Machine</title>
     <link href="http://apievangelist.com/2023/12/17/seeing-the-machine/"/>
     <updated>2023-12-17T07:00:00Z</updated>
