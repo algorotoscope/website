@@ -1,6 +1,6 @@
 ---
 published: true
-layout: works
+layout: post
 title: Seeing the Machine
 date: 2023-12-17T12:00:00.000Z
 tags:

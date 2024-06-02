@@ -1,6 +1,6 @@
 ---
 published: true
-layout: works
+layout: post
 title: I Am Not Well
 date: 2024-02-22T12:00:00.000Z
 tags:

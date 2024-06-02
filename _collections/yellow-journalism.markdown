@@ -18,16 +18,12 @@ image: ../../images/collections//yellow-journalism/yellow-journalism.jpeg
 images:
   - name: Capital
     image: yellow-journalism-capital.jpeg
-  - name: Covid Tests
+  - name: Covid
     image: yellow-journalism-covid-tests.jpeg
-  - name: Stainless Crow
+  - name: Stainless
     image: yellow-journalism-crow-stainless-steel.jpeg
-  - name: Crow Stump
-    image: yellow-journalism-crow-stump-waterfront.jpeg
   - name: Walking Desert
     image: yellow-journalism-dinosaur-walking-desert.jpeg
-  - name: Dragon in Sun
-    image: yellow-journalism-dragon-shadow-sun-2.jpeg
   - name: Egret on Water
     image: yellow-journalism-egret-water-silhouette.jpeg
   - name: Red Flower
@@ -36,9 +32,13 @@ images:
     image: yellow-journalism-flower-white-purple-close.jpeg
   - name: NYC on Train
     image: yellow-journalism-nyc-coming-in-on-train.jpeg
+  - name: Dragon in Sun
+    image: yellow-journalism-dragon-shadow-sun-2.jpeg    
   - name: Over the Town
     image: yellow-journalism-over-the-town.jpeg
   - name: Foggy Pier
     image: yellow-journalism-pier-long-foggy.jpeg    
+  - name: Crow Stump
+    image: yellow-journalism-crow-stump-waterfront.jpeg    
 ---
 {% include collection.html %}

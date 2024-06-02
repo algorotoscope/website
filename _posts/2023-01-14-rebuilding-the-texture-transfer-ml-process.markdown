@@ -1,6 +1,6 @@
 ---
 published: true
-layout: works
+layout: post
 title: Rebuilding the Texture Transfer ML Process
 date: 2023-01-14T12:00:00.000Z
 tags:

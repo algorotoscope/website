@@ -1,6 +1,6 @@
 ---
 published: true
-layout: works
+layout: post
 title: Composite Algorotoscope Images
 date: 2024-03-23T12:00:00.000Z
 tags:

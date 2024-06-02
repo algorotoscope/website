@@ -1,6 +1,6 @@
 ---
 published: true
-layout: works
+layout: post
 title: Adding Some Collections of My Algorotoscope Work
 date: 2017-07-15T12:00:00.000Z
 tags:

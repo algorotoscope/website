@@ -3,6 +3,7 @@ published: true
 layout: collection
 title: 1939 New York Worlds Fair
 description: I think a lot about the influence New York has had on rural places, and specifically the one I grew up in. People in rural areas love to hate on New York, while simultaneously influencing the narrative in many profound ways. People I grew up with still tell stories of New York City from 50 years ago. Most of them from movies, or the news. I am perpetually looking for backdrops for my images and stories that capture how this feels to me. I am always on the hunt for iconic images to steal from that represent New York, but the 1939 New York's World Fair provides a nice subtle backdrop for much of what I want to say.
+summary: The focus of America's greatness and hatred on a single city.
 date: 2024-04-21T09:00:00.000Z
 tags:
   - Rural

@@ -273,8 +273,7 @@ function searchResults(form) {
 </div>
             </div>
 
-            <div class="article-content link-primary">
-                <center><a href="https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/blossombar/blossombar-still.jpg" target="_blank"><img src="https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/blossombar/blossombar-still.jpg" width="90%" align="center" style="padding: 5px;"></a></center>
+            <div class="article-content">
                 <p>I had come across <a href="https://arxiv.org/abs/1603.03417">Texture Networks: Feed-forward Synthesis of Textures and Stylized Image from Cornell University</a> a while back in my regular monitoring of the API space, so  I was pleased to <a href="https://algorithmia.com/algorithms/deeplearning/DeepFilter">see Algorithmia building on this work with their Deep Filter project</a>. The artistic styles and textures you can apply to images is fun to play with, and even more fun when you apply at scale using their API. While this was fun, what really caught my attention was <a href="http://blog.algorithmia.com/training-style-transfer-models/">their post on their open source AWS AMI for training style transfer models</a>--where you can develop your own image filter.</p>
 <p>I fired up an AWS instance, and within 48 hours I had my first image filter. For some reason, I went to bed that night thinking about drone video footage and began wondering if I could apply Algorithmia's filters, as well as the custom filters I create to drone footage. The next day I started playing with my prototype, to see what was possible with applying this type of image filtering to videos.</p>
 <p>My approach has three distinct features:</p>
@@ -293,9 +292,6 @@ function searchResults(form) {
 <p>I'm not sure where I'm going with this work. I'm finding it oddly soothing to define new filters, and apply them to my drone videos from this summer. For now, I'm just thinking of interesting filters to build and apply the filters to the videos I already have. It also has me thinking about how I can take my drone out to get more shots--from both natural and urban landscape. </p>
 <p>For near-term future, I'm just getting to know what the filters produce, and how certain drone shot(lighting, color, terrain) respond to each filter. It has me thinking a lot about what would make a good filter, and what types of images I can use to train image filter algorithms that can be applied in this way. If you want to learn more about what I'm doing you can <a href="https://github.com/kinlane/algo.rotoscope.work/issues">submit a commit via the Github issues for this project</a>, or <a href="http://kinlane.com/">you can contact me directly</a>. </p>
 
-                
-                    
-                
             </div>
 
             <hr class="uk-margin-medium">
@@ -315,14 +311,6 @@ function searchResults(form) {
 
             
         </article>
-
-        <script>
-            // Table of contents scroll to
-            UIkit.scroll('#markdown-toc a', {
-                duration: 400,
-                offset: 120
-            });
-        </script>
 
     </div>
 </div>

@@ -13,14 +13,22 @@
 		<div class="carousel-inner">
 
 			<div class="carousel-item active">
-				<img src="{{ page.feature }}" class="d-block w-100" alt="{{ page.tittle }}">
+				<img src="{{ page.feature }}" class="d-block w-100" alt="{{ page.title }}">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>{{ page.title }}</h5>
+					<p>{{ page.summary }}</p>
+				</div>				
 			</div>
 
 			{% for image in page.images %}
 				{% assign slug = page.title | replace: " ", "-" | downcase %}
 				<div class="carousel-item">
 					<img src="../../images/collections/{{ slug }}/{{ image.image }}" class="d-block w-100" alt="{{ image.name }}">
-				</div>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>{{ image.name }}</h5>
+						<p>{{ image.summary }}</p>
+					</div>						
+				</div>			
 			{% endfor %}
 
 		</div>
