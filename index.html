@@ -3,26 +3,26 @@ layout: page
 width: expand
 title: Kin Lane
 ---
+{% assign columns = 3 %}
+{% assign container = '' %}
+<div class="uk-section section-videos">
+    <div class="uk-container{{container}}">
 
-<div class="uk-container{{container}}">
+		<p>After the 2016 election I found myself extremely depressed, and to help occupy my brain I began to play with <a href="https://www.tensorflow.org/">the machine learning platform Tensorflow</a>, immersing myself in understanding how I can apply texture transfer machine learning to videos and images. I began playing with a lot of my drone footage, transforming them into cartoon like landscape, but then quickly began playing with just still images, and apply potentially meaningful transfers that would augment and evolve the photos I have taken. I use these images in my stories across <a href="https://apievangelist.com">API Evangelist</a>, <a href="https://apievangelist.com">Kin Lane</a>, and other blogs I publish to to help show how algorithms are being used to distort how we see the world.</p>
 
-	<p>After the 2016 election I found myself extremely depressed, and to help occupy my brain I began to play with <a href="https://www.tensorflow.org/">the machine learning platform Tensorflow</a>, immersing myself in understanding how I can apply texture transfer machine learning to videos and images. I began playing with a lot of my drone footage, transforming them into cartoon like landscape, but then quickly began playing with just still images, and apply potentially meaningful transfers that would augment and evolve the photos I have taken. I use these images in my stories across <a href="https://apievangelist.com">API Evangelist</a>, <a href="https://apievangelist.com">Kin Lane</a>, and other blogs I publish to to help show how algorithms are being used to distort how we see the world.</p>
-
-	<h3>Collections</h3>
-	<p>These are some collections of photos I have pulled together to further demonstrate how I am stealing from the works of others using technology to show how technology is stealing from us, and distorting almost everything around us on and offline. The motives behind this distortion is nothing new, but is finding a new home when it comes to the algorithms that are increasingly governing the world around us.</p>
-
-	<div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
-	{% assign collections = site.collections | reverse %}
-	{% for collection in collections %}
-	{% assign slug = collection.title | replace: " ", "-" | downcase %}
-		<div style="width: 300px;">
-			<div>
-				<a href="/collections/{{ slug }}/"><img src="{{ collection.feature }}" width="100%"></a>
-				<h3 class="uk-card-title uk-margin"><a href="/collections/{{ slug }}/">{{ collection.title }}</a></h3></h3>
-			</div>
-		</div>
-	{% endfor %}
+		<div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
+			{% assign collections = site.collections | reverse %}
+			{% for collection in collections %}
+				{% assign slug = collection.title | replace: " ", "-" | downcase %}
+				<div width="30%">
+					<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
+						<a href="/collections/{{ slug }}/" target="_blank"><img src="{{ collection.feature }}" width="100%" style="border-radius: 25%;"></a>
+						<h3 class="uk-card-title uk-margin">{{ collection.title }}</h3>
+					</div>
+				</div>
+			{% endfor %}
+		</div>	
+		<br>
+		<p>I'm adding images regularly, and using as part of my storytelling in hopes of demonstrating how algorithms are distorting the world around us each day in the online world we live in. My goal is to help make us aware in real time that algorithms are impacting our digital and even our physical worlds. My images do not always look pretty, but I try to make sure they have meaning and push forward the conversation in some way.</p>
 	</div>
-
-	<p>I'm adding images regularly, and using as part of my storytelling in hopes of demonstrating how algorithms are distorting the world around us each day in the online world we live in. My goal is to help make us aware in real time that algorithms are impacting our digital and even our physical worlds. My images do not always look pretty, but I try to make sure they have meaning and push forward the conversation in some way.</p>
 </div>
