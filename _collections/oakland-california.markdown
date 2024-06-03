@@ -1,7 +1,7 @@
 ---
 published: true
 layout: collection
-title: Oakland, California
+title: Oakland California
 description: I lived in California from April of 2020 through June of 2023. I loved it. I didn't want to live anywhere else (until NYC). I lived downtown. I was captivated by the culture, people, politics, strength, beauty, and resilience of this town. 
 date: 2023-01-14T09:00:00.000Z
 tags:

@@ -8,8 +8,8 @@ tags:
   - Behaviorism
   - Education
   - Learning
-feature: ../../images/collections/bf-skinner-behaviorism/bf-skinner-feature.jpg
-image: ../../images/collections/bf-skinner-behaviorism/bf-skinner.jpg
+feature: ../../images/collections/behaviorism/bf-skinner-feature.jpg
+image: ../../images/collections/behaviorism/bf-skinner.jpg
 images:
   - name: Alan Turing
     image: bf-skinner-alan-turing-side.jpg

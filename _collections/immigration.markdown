@@ -9,8 +9,8 @@ tags:
   - Migrants
   - Worst
   - Fear
-feature: ../../images/collections/america-immigration-dumping-ground/america-immigration-dumping-ground.jpg
-image: ../../images/collections/america-immigration-dumping-ground/america-immigration-dumping-ground.jpg
+feature: ../../images/collections/immigration/america-immigration-dumping-ground.jpg
+image: ../../images/collections/immigration/america-immigration-dumping-ground.jpg
 images:
   - name: Barbed
     image: barbed.jpg

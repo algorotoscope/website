@@ -11,8 +11,8 @@ tags:
   - History
   - Isolation
   - Back Roads
-feature: ../../images/collections/the-persistence-of-memory/the-persistence-of-memory-feature.jpg
-image: ../../images/collections/the-persistence-of-memory/the-persistence-of-memory.jpg
+feature: ../../images/collections/persistence-of-memory/the-persistence-of-memory-feature.jpg
+image: ../../images/collections/persistence-of-memory/the-persistence-of-memory.jpg
 images:
   - name: Border Crossing Through the Fence
     image: border-crossing-through-fence.jpg
