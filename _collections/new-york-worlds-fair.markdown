@@ -11,8 +11,8 @@ tags:
   - Country
   - City
   - Modern
-feature: ../../images/collections/1939-new-york-worlds-fair/1939-new-york-worlds-fair-square.jpg
-image: ../../images/collections/1939-new-york-worlds-fair/1939-new-york-worlds-fair.jpg
+feature: ../../images/collections/new-york-worlds-fair/1939-new-york-worlds-fair-square.jpg
+image: ../../images/collections/new-york-worlds-fair/1939-new-york-worlds-fair.jpg
 images:
 
   - name: Blue Hill Fair

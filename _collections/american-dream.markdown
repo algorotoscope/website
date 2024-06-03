@@ -11,8 +11,8 @@ tags:
   - America
   - Myth
   - Community
-feature: ../../images/collections/american-dream-fundamental/american-dream-fundamental-square.jpg
-image: ../../images/collections/american-dream-fundamental/american-dream-fundamental.jpeg
+feature: ../../images/collections/american-dream/american-dream-fundamental-square.jpg
+image: ../../images/collections/american-dream/american-dream-fundamental.jpeg
 images:
   - name: Bike All the Way
     image: american-dream-fundamental-bike-path-all-the-way.jpg 
