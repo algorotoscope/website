@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>John Wayne | Kin Lane</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="John Wayne" />
+<meta name="author" content="Kin Lane" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I come from a very libertarian background, growing up in rural Oregon. In 1970s and 1980s Oregon you meet a lot of people who worship John Wayne. As I think about how people I grew up with see the world I often put on my John Wayne glasses to see how someone from a rural town will see the riding the NYC subway for the first time, or eating Dominican food in Hell’s Kitchen. Sadly, I think it is how many people approach the world around them, even when they didn’t grow up watching John Wayne movies." />
+<meta property="og:description" content="I come from a very libertarian background, growing up in rural Oregon. In 1970s and 1980s Oregon you meet a lot of people who worship John Wayne. As I think about how people I grew up with see the world I often put on my John Wayne glasses to see how someone from a rural town will see the riding the NYC subway for the first time, or eating Dominican food in Hell’s Kitchen. Sadly, I think it is how many people approach the world around them, even when they didn’t grow up watching John Wayne movies." />
+<link rel="canonical" href="http://localhost:4000/collections/john-wayne/" />
+<meta property="og:url" content="http://localhost:4000/collections/john-wayne/" />
+<meta property="og:site_name" content="Kin Lane" />
+<meta property="og:image" content="http://localhost:4000/images/collections/john-wayne/john-wayne-the-searchers-square.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-09T04:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/images/collections/john-wayne/john-wayne-the-searchers-square.jpeg" />
+<meta property="twitter:title" content="John Wayne" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kin Lane"},"dateModified":"2024-11-09T04:00:00-05:00","datePublished":"2024-11-09T04:00:00-05:00","description":"I come from a very libertarian background, growing up in rural Oregon. In 1970s and 1980s Oregon you meet a lot of people who worship John Wayne. As I think about how people I grew up with see the world I often put on my John Wayne glasses to see how someone from a rural town will see the riding the NYC subway for the first time, or eating Dominican food in Hell’s Kitchen. Sadly, I think it is how many people approach the world around them, even when they didn’t grow up watching John Wayne movies.","headline":"John Wayne","image":"http://localhost:4000/images/collections/john-wayne/john-wayne-the-searchers-square.jpeg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/collections/john-wayne/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png"},"name":"Kin Lane"},"url":"http://localhost:4000/collections/john-wayne/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Kin Lane" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+  <script src="/assets/js/main.js"></script>
+
+  
+    <script>
+function searchResults(form) {
+
+    var currentItem = null;
+    var search = document.getElementById(form);
+    var results = document.getElementById(form + "-results");
+    var toggle = document.getElementById(form + "-toggle");
+
+    function removeActive() {
+        for (i = 0; i < results.children.length; i++) {
+            results.children[i].classList.remove("uk-background-muted");
+        }
+    }
+
+    // Detect all clicks on the document
+    document.addEventListener("click", function(event) {
+
+        var isClickSearch = false;
+        var isClickResults = false;
+        var isClickSearchToggle = false;
+
+        if (search !== null) {
+            isClickSearch = search.contains(event.target);
+        }
+
+        if (results !== null) {
+            isClickResults = results.contains(event.target);
+        }
+
+        if (toggle !== null) {
+            isClickSearchToggle = toggle.contains(event.target);
+        }
+
+        if (isClickSearch || isClickSearchToggle) {
+            results.style.display = "block";
+        }        
+
+        if (!isClickResults && !isClickSearch && !isClickSearchToggle) {
+            results.style.display = "none";
+        }        
+        
+    });    
+
+    results.addEventListener("mouseover", function(event) {
+
+        removeActive();
+        event.target.parentElement.classList.add("uk-background-muted");
+        currentItem = null;
+
+    });
+
+    results.addEventListener("mouseout", function(event) {
+        event.target.parentElement.classList.remove("uk-background-muted");
+    });
+
+
+    search.addEventListener("keyup", function(event) {
+
+        var resultItems = results.children;
+        var resultCount = results.children.length;
+                                
+        if (event.keyCode === 40) {
+
+            if (currentItem < (resultCount - 1)) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem++;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+            
+        } else if (event.keyCode === 38) {
+
+            if (currentItem > 0) {
+                if (currentItem === null) {
+                    currentItem = 0;
+                } else {
+                    removeActive();
+                    currentItem--;
+                }
+                removeActive();
+                resultItems[currentItem].classList.add("uk-background-muted");
+            }
+
+        } else if (event.keyCode === 13) {
+
+            resultItems[currentItem].children[0].click();
+
+        }
+
+    });
+
+}
+</script>
+  
+  
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="John Wayne | Kin Lane">
+  <meta property="og:site_name" content="Kin Lane">
+  <meta property="og:description" content="I come from a very libertarian background, growing up in rural Oregon. In 1970s and 1980s Oregon you meet a lot of people who worship John Wayne. As I think about how people I grew up with see the world I often put on my John Wayne glasses to see how someone from a rural town will see the riding the NYC subway for the first time, or eating Dominican food in Hell&#39;s Kitchen. Sadly, I think it is how many people approach the world around them, even when they didn&#39;t grow up watching John Wayne movies.">
+  <meta property="og:image"  content="">
+
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="John Wayne | Kin Lane">
+  <meta name="twitter:site" content="Kin Lane">
+  <meta name="twitter:description" content="I come from a very libertarian background, growing up in rural Oregon. In 1970s and 1980s Oregon you meet a lot of people who worship John Wayne. As I think about how people I grew up with see the world I often put on my John Wayne glasses to see how someone from a rural town will see the riding the NYC subway for the first time, or eating Dominican food in Hell&#39;s Kitchen. Sadly, I think it is how many people approach the world around them, even when they didn&#39;t grow up watching John Wayne movies.">
+
+  
+  
+  <meta name="twitter:image" content="">
+
+  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+    <body>
+
+    
+        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div data-uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/">Algorotoscope.Work</a>
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/" >Home</a></li>
+                                                                                                        
+                                
+                            
+                        
+                            
+                            
+                            
+                                
+                                    
+                                        <li><a href="/updates/" >Updates</a></li>
+                                                                                                        
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <div class="uk-navbar-center uk-hidden@m">
+                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    
+                        
+                            <div>
+                                <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search my brain" autofocus autocomplete="off">
+                                    </form>
+                                    <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                </div>
+                            </div>
+                            <script>
+                            SimpleJekyllSearch({
+                                searchInput: document.getElementById('search-navbar'),
+                                resultsContainer: document.getElementById('search-navbar-results'),
+                                noResultsText: '<li class="no-results">No results found</li>',
+                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                json: "/search.json"
+                            });
+                            searchResults("search-navbar");
+                            </script>
+                        
+                    
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        
+                    </ul>
+
+                    
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="uk-container">
+
+	<h2 style="text-align: center;">John Wayne</h2>
+	<div id="carouselExampleCaptions" class="carousel slide">
+
+		
+
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label=""></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Supreme Court"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Sovarampi Desert"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Dufur"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Downtown Crosswalk"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="NYC from Ellis Island"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Fishing Lake"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Fishing Docks"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Desert Flower"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Abandoned House"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Industrial Fans"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mining Mountains"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="New Development"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Coming in On Train"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="View from Fairy"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Downtown Oakland"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="San Francisco Through Fence"></button>
+			
+				
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Small Town Street"></button>
+						
+		</div>
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="../../images/collections/john-wayne/john-wayne-the-searchers-square.jpeg" class="d-block w-100" alt="John Wayne" />
+				<div class="carousel-caption d-none d-md-block">
+					<h5>John Wayne</h5>
+					<p></p>
+				</div>				
+			</div>
+
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-supreme-court.jpg" class="d-block w-100" alt="Supreme Court" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Supreme Court</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-desert-sovarampi.jpg" class="d-block w-100" alt="Sovarampi Desert" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Sovarampi Desert</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-downtown-dufur.jpg" class="d-block w-100" alt="Dufur" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Dufur</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-downtown-street-crosswalk.jpg" class="d-block w-100" alt="Downtown Crosswalk" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Downtown Crosswalk</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-ellis-island-nyc.jpeg" class="d-block w-100" alt="NYC from Ellis Island" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>NYC from Ellis Island</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-fishing-boat-lake.jpg" class="d-block w-100" alt="Fishing Lake" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Fishing Lake</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-fishing-docks-lake.jpg" class="d-block w-100" alt="Fishing Docks" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Fishing Docks</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-flower-blue-close.jpg" class="d-block w-100" alt="Desert Flower" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Desert Flower</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-house-abandoned-fence.jpg" class="d-block w-100" alt="Abandoned House" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Abandoned House</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-industrial-fans.jpg" class="d-block w-100" alt="Industrial Fans" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Industrial Fans</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-mining-mountains.jpg" class="d-block w-100" alt="Mining Mountains" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Mining Mountains</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-new-building-start.jpg" class="d-block w-100" alt="New Development" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>New Development</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-nyc-coming-in-on-train.jpg" class="d-block w-100" alt="Coming in On Train" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Coming in On Train</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-nyc-skyline-from-ferry.jpg" class="d-block w-100" alt="View from Fairy" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>View from Fairy</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-oakland-downtown.jpg" class="d-block w-100" alt="Downtown Oakland" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Downtown Oakland</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-san-francisco-fence.jpeg" class="d-block w-100" alt="San Francisco Through Fence" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>San Francisco Through Fence</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+				
+				<div class="carousel-item">
+					<img src="../../images/collections/john-wayne/john-wayne-the-searchers-small-town-street-2.jpg" class="d-block w-100" alt="Small Town Street" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Small Town Street</h5>
+						<p></p>
+					</div>						
+				</div>			
+			
+
+		</div>
+
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+
+	</div>
+
+</div>
+
+
+    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        
+
+    </div>
+</div>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png" alt="Kin Lane"></a>
+     
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+      
+        <ul class="uk-nav uk-nav-primary uk-margin-top">
+            
+                
+
+                
+
+                
+                    <li><a href="/" >Home</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/docs/installation/" >Docs</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/blog/" >Blog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><a href="/changelog-timeline/" >Changelog</a></li>
+                
+            
+                
+
+                
+
+                
+                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
+                
+            
+        </ul>
+
+        <div class="uk-margin-top uk-text-center">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    
+        <footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="http://kinlane.com" target="_blank" >Kin Lane</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="http://alternate.kinlane.com" target="_blank" >Alternate Kin Lane</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright link-secondary">Kin Lane</div>
+
+    </div>
+</footer>
+
+    
+
+    
+
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1119465-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1119465-35');
+</script>
+
+
+    </body>
+
+</html>

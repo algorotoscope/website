@@ -17,11 +17,11 @@ images:
   - name: Sovarampi Desert
     image: john-wayne-the-searchers-desert-sovarampi.jpg
   - name: Dufur 
-    image: john-wayne-the-searchers-downtown-dufur.jpjpgeg
+    image: john-wayne-the-searchers-downtown-dufur.jpg
   - name: Downtown Crosswalk 
     image: john-wayne-the-searchers-downtown-street-crosswalk.jpg
   - name: NYC from Ellis Island 
-    image: john-wayne-the-searchers-ellis-island-nyc.jpg
+    image: john-wayne-the-searchers-ellis-island-nyc.jpeg
   - name: Fishing Lake 
     image: john-wayne-the-searchers-fishing-boat-lake.jpg
   - name: Fishing Docks 
