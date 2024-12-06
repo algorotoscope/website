@@ -4,7 +4,7 @@ layout: collection
 title: Francis Williams
 description: 
 summary: 
-date: 2024-12-05:00:00.000Z
+date: 2024-12-05
 tags:
   - White Supremacy
   - Racism
