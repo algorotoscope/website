@@ -9,8 +9,8 @@ tags:
   - Westerns
   - John Wayne
   - Hollywood
-feature: ../../images/collections/john-wayne/john-wayne-the-searchers-square.jpeg
-image: ../../images/collections/john-wayne/john-wayne-the-searchers-square.jpeg
+feature: ../../images/collections/john-wayne/john-wayne-the-searchers-square.jpg
+image: ../../images/collections/john-wayne/john-wayne-the-searchers-square.jpg
 images:
   - name: Supreme Court 
     image: john-wayne-the-searchers-supreme-court.jpg
