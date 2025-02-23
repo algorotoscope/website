@@ -38,7 +38,7 @@ images:
     image: john-wayne-the-searchers-new-building-start.jpg
   - name: Coming in On Train 
     image: john-wayne-the-searchers-nyc-coming-in-on-train.jpg
-  - name: View from Fairy 
+  - name: View from Ferry 
     image: john-wayne-the-searchers-nyc-skyline-from-ferry.jpg
   - name: Downtown Oakland 
     image: john-wayne-the-searchers-oakland-downtown.jpg
