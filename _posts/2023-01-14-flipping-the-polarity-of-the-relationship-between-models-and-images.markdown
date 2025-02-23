@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Rebuilding the Texture Transfer ML Process
+title: Flipping the Polarity of the Relationship Between Models and Images
 date: 2023-01-14T12:00:00.000Z
 tags:
   - Models
@@ -14,10 +14,10 @@ image: >-
 Historically the ML models I have trained for Algorotoscope have been fairly dark in nature. I had the training wheels of the models that came with the ML process that I adopted, but then I quickly began [training on Salvador Dali and playing around with a distortion in time](https://algorithmic.rotoscope.work/collections/the-persistence-of-memory/), but then found myself drowning in Nazi and Russian propaganda. I would take these models and apply them to normal everyday photos I have taken—obfuscating the darkness in the texture applied to each photo. Now, I am flipping the polarity, training more positive models, but then applying them to darker photos, experimenting with how I can further obfuscate the real world around was with digital textures. I have two models to demonstrate how I am seeing things.
 
 ## Train Travel to California
-<img src="https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train.jpeg" width="100%" align="center" title="Train Travel to California">
+<img src="https://algorithmic.rotoscope.work/images/collections/california-by-train/california-by-train.jpeg" width="100%" align="center" title="Train Travel to California">
 
 ## Applied to Train Travel in California
-<img src="https://algorithmic.rotoscope.work/images/collections/california-travel-by-train/california-travel-by-train-freeway-interchange-fence.jpg" width="100%" align="center" title="Applied to Train Travel in California">
+<img src="https://algorithmic.rotoscope.work/images/collections/california-by-train/california-by-train-freeway-interchange-fence.jpg" width="100%" align="center" title="Applied to Train Travel in California">
 
 ## Oakland, California Bridge
 <img src="https://algorithmic.rotoscope.work/images/collections/oakland-california/oakland-california.jpeg" width="100%" align="center" title="Oakland, California Bridge">
