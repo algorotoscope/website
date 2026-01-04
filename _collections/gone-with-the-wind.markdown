@@ -2,8 +2,7 @@
 published: true
 layout: collection
 title: Gone With The Wind
-description: I think a lot about the American Dream. Is it real? Did it only exist during a certain period? Or was it always just a fabricated story that is just out of reach? The American Dream feels like a story to light the fire under our asses in the right moment, but if also feels like a story of exploitation. I am American, so I guess I believe. I mean it feels like it is part of the American club, you have to believe. Even without evidence. 
-summary: The American Dream feels like a dream I've woken up from and can't quite remember.
+description: I needed a way to showcase how baked into our narrative racism and sexism is. Being able to colorize and bring attention to sexism and racism in an era where DEI practiceds are being rolled back is important. I wanted to use the flames from the dumpster fire present in the American culture to illuminate system racism and sexism in the stories I tell across my blogs, using the same firelight many Americans would talk about Gone With the Wind in front of in their homes across the states. This movie is put on a pedestal in many white households I found myself in while growing up, and I think it is a story that is being TikTokified into our culture via the Internet that has spread across small towns.
 date: 2024-04-21T09:00:00.000Z
 tags:
   - Sexism
