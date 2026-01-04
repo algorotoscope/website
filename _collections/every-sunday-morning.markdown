@@ -3,7 +3,7 @@ published: true
 layout: collection
 title: Every Sunday Morning
 description: 
-summary: 
+summary: e
 date: 2025-12-02T09:00:00.000Z
 tags:
   - Christianity
