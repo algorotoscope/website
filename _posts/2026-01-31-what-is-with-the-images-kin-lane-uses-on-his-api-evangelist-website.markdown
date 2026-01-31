@@ -1,0 +1,24 @@
+---
+published: true
+layout: post
+title: What Is With the Images Kin Lane Uses on His API Evangelist Website?
+date: 2025-02-23T12:00:00.000Z
+tags:
+  - Francis William
+  - Racism
+  - Bias
+  - Shadows
+image: >-
+  https://algorithmic.rotoscope.work/images/collections/francis-williams/francis-williams-freeway-gree-building.jpg
+---
+I love my algorotoscope work. It has grounded and guided my storytelling across [Kin Lane](https://kinlane.com) and [API Evangelist](https://apievangelist.com). It keeps me thinking about the system, but more importantly the bias in the system that we perpetuate. The photos keep me thinking about the bias with every story that I tell, which always shifts the words I choose to use, and the tone of the stories I tell--the opposite of what Generative AI does for people who use it to craft their "content".
+
+I do not get many people who comment on my images, despite their ubiquitous presence in my storytelling. I do get the occasional outspoken individual who tells me they add nothing to the writing, and likely confuse people rather than helping them. Something that always makes me smile. I find it fascinating that so few people even ask for their meaning, do a few minutes of Googling, to ask what is with those images that Kin Lane uses on API Evangelist? It is fascinating that people move through the world like this. But it highlights why they are needed--to force us to stumble, pause, and think about what the system is programming us to do.
+
+Hours went into reading, exploring, and discovering each image I use as part of my filters. Each image is based upon evidence I come across working on the Internet each day. The systemic racism, sexism, and other deep seated bias being digitally transformed and encoded into the systems we depend on to run our world. Hours are spent getting to know how each filter is applied to different photos I take from the world each day. How it applies to stone, sunshine, glass, and other elements. I spend probably 30 minutes ever single day thinking about how I can reveal the bias that exists, and I am always looking for new photo opportunities as I make my way around the world. 
+
+I spend probably about 20 hours and $200.00 creating each machine learning filter, then even more applying them to photos. I intentionally started using machine learning, or simply ML for this way before generative AI became a thing. I started seeing the fascist tendencies of Internet technology, APIs, and ML even before this moment, and thought it would be a worthwhile act of resistance to use the masters tools to steal the essence of common meaningful images and apply them to relevant photos that I can use in my regular fictional and non-fictional storytelling. It keeps me thinking about the bias in the system, evaluating it, negotiating with it, and never falling into any sort of complacency regarding my complicity in perpetuating and codifying bias across Internet technology. 
+
+I smile when people question my images purpose without ever actually visiting my algorotoscope work or asking about them. It's fascinating. It really reflects how asleep at the wheel we are when it comes to the Internet, but also the systemic aspects of our lives. I also smile when people do the work. It is rare, but it happens. All you really have to do is google and read the opening paragraph to my algorotoscope work and scan the images to understand what I am doing, or click on the link to my work in the footer of all my sites. There is a lot of depth and meaning behind each image filter I use, and then there is another layer of meaning to me regarding the photos I've take and applied to the photos. Ranging from trips I've taken to different cities, and my time working in Washington D.C. If it gets used, it has some meaning and relevance in my journey, and my overall story.
+
+[Algortoscope is directly related to me choosing to stay in the machine](https://kinlane.com/2026/01/31/staying-within-the-machine/). It is the visual backdrop for the stories I find and tell. My images reflect how I see the technology sector and the human beings it is extracting from and grinding up each day. I am a storyteller and I like playing with images. This is the primary reason I continue to work in technology and keep performing as the API Evangelist. The stories and the people. Well, and the money. It pays good. The trick is to not lose my soul along the way. Algorotoscope helps with that. I love telling stories about how the Internet is consuming us. It is the only thing that keeps from losing my shit. It keeps me able to deal with the toxicity and soulless interactions I have each day with people who have lost their way, and often times need help finding the door, or to have their story told to inform future waves of humans who innocently begin working in the space, but all inevitably lose their way at some point.
