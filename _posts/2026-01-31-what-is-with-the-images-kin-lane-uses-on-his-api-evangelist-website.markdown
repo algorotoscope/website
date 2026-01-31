@@ -9,7 +9,7 @@ tags:
   - Bias
   - Shadows
 image: >-
-  https://algorithmic.rotoscope.work/images/collections/francis-williams/francis-williams-freeway-gree-building.jpg
+  https://kinlane-productions2.s3.amazonaws.com/algorotoscope-master/bf-skinner-kin-boulder-last-before.jpeg
 ---
 I love my algorotoscope work. It has grounded and guided my storytelling across [Kin Lane](https://kinlane.com) and [API Evangelist](https://apievangelist.com). It keeps me thinking about the system, but more importantly the bias in the system that we perpetuate. The photos keep me thinking about the bias with every story that I tell, which always shifts the words I choose to use, and the tone of the stories I tell--the opposite of what Generative AI does for people who use it to craft their "content".
 
