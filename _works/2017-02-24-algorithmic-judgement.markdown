@@ -10,7 +10,7 @@ tags:
   - Judgement
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/supreme-court-judgement.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/supreme-court-judgement.jpg
+square: /images/works/algorithmic-judgement.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>Being judged every day by algorithms.</center>

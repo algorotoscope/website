@@ -8,7 +8,7 @@ tags:
   - Supreme Court
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C32Eg8bUEAEa_gj.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C32Eg8bUEAEa_gj_square.jpg
+square: /images/works/steps-of-the-supreme-court.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>The steps of the Supreme Court.</center>

@@ -10,7 +10,7 @@ tags:
   - Dark
 image: http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/76_73_800_500_0_max_0_-1_-1.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/76_73_800_500_0_max_0_-1_-1_square.jpg
+square: /images/works/dark-liberty-in-storm.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>Lady Liberty in a storm, darkened skies, and an algorithmic assault on freedom.</center>

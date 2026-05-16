@@ -11,7 +11,7 @@ tags:
   - Arizona
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/yuma-downtown.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/yuma-downtown-square.jpg
+square: /images/works/left-behind-downtown-yuma.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>Flying above an empty downtown Yuma in a left behind dream.</center>

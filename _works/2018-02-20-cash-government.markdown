@@ -8,7 +8,7 @@ tags:
   - Capital
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/77_33_800_500_0_max_0_-5_-1.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/77_33_800_500_0_max_0_-5_-1_square.jpg
+square: /images/works/cash-government.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>In Washington D.C., everything is for sale.</center>

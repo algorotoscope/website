@@ -8,7 +8,7 @@ tags:
   - Cars
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C18YCQlUUAQjxRe.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C18YCQlUUAQjxRe_square.jpg
+square: /images/works/old-cars.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>Old cars.</center>

@@ -9,7 +9,7 @@ tags:
   - Room
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/64_176_800_500_0_max_0_-1_-1.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/64_176_800_500_0_max_0_-1_-1_square.jpg
+square: /images/works/chair-in-the-corner.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>A chair in the corner to sit and think.</center>

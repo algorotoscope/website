@@ -8,7 +8,7 @@ tags:
   - Gas Station
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C106VpCVQAEkHqy.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C106VpCVQAEkHqy_square.jpg
+square: /images/works/abandoned-crush-gas-station.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>An abandoned gas station alongside the road with old Crush sign.</center>

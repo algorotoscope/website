@@ -9,7 +9,7 @@ tags:
   - Barbed Wire
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/raven-fence.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/raven-fence-square.jpg
+square: /images/works/crow-on-the-barbed-wire.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>Raven sitting on the barbed wire.</center>

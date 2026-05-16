@@ -241,6 +241,8 @@
 					{% if work.video and work.video != "" %}
 						{% assign vid = work.video | split: '/embed/' | last | split: '?' | first | split: '&' | first %}
 						{% assign thumb = 'https://i.ytimg.com/vi/' | append: vid | append: '/hqdefault.jpg' %}
+					{% elsif work.square contains "/images/" %}
+						{% assign thumb = work.square %}
 					{% else %}
 						{% assign thumb = "" %}
 					{% endif %}

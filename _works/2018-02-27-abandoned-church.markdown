@@ -8,7 +8,7 @@ tags:
   - Church
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C4NLtWrWMAAMY9d.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C4NLtWrWMAAMY9d_square.jpg
+square: /images/works/abandoned-church.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>Old abandoned church.</center>

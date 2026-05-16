@@ -9,7 +9,7 @@ tags:
   - Clouds
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/schoolhouse-dark-dali.jpg
 video: ''
-square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/schoolhouse-dark-dali-square.jpg
+square: /images/works/dark-clouds-over-the-schoolhouse.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>
 <center>Dark clouds moving in over the old school house.</center>
