@@ -73,7 +73,14 @@
 			<h3 class="uk-text-center">Related Works</h3>
 			<div class="uk-child-width-1-3@m uk-grid-match uk-text-center" data-uk-grid>
 				{% for work in related limit: 6 %}
-					{% capture thumb %}{% include work-thumb-url.html work=work %}{% endcapture %}
+					{% if work.video and work.video != "" %}
+						{% assign vid = work.video | split: '/embed/' | last | split: '?' | first | split: '&' | first %}
+						{% assign thumb = 'https://i.ytimg.com/vi/' | append: vid | append: '/hqdefault.jpg' %}
+					{% elsif work.square %}
+						{% assign thumb = work.square %}
+					{% else %}
+						{% assign thumb = work.image %}
+					{% endif %}
 					<div>
 						<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
 							<a href="{{ work.url }}"><img src="{{ thumb }}" width="100%" loading="lazy" style="border-radius: 10%;" alt="{{ work.title }}"></a>
