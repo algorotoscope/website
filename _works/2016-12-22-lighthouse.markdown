@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Lighthouse
 image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/working/lighthouse.png
-video: https://www.youtube.com/embed/o5SXsTCCR-E
+video: 'https://www.youtube.com/embed/vYFww58RQR8'
 square: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/working/lighthouse-square.png
 ---
 <center><iframe width="853" height="505" src="{{ page.video }}" frameborder="0" allowfullscreen></iframe></center>
