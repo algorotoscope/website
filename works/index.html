@@ -14,9 +14,10 @@ permalink: /works/
 		<div class="uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
 			{% assign works = site.works | sort: 'date' | reverse %}
 			{% for work in works %}
+				{% capture thumb %}{% include work-thumb-url.html work=work %}{% endcapture %}
 				<div>
 					<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
-						<a href="{{ work.url }}"><img src="{{ work.square | default: work.image }}" width="100%" loading="lazy" style="border-radius: 10%;" alt="{{ work.title }}"></a>
+						<a href="{{ work.url }}"><img src="{{ thumb }}" width="100%" loading="lazy" style="border-radius: 10%;" alt="{{ work.title }}"></a>
 						<h4 class="uk-card-title uk-margin-small">{{ work.title }}</h4>
 						{% if work.date %}
 							<p class="uk-text-meta">{{ work.date | date: "%b %Y" }}</p>
