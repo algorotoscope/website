@@ -1,36 +1,39 @@
 <div class="uk-container{{container}}">
 
-	<h2 style="text-align: center;">{{ page.title }}</h2>
-	<div id="carouselExampleCaptions" class="carousel slide">
+	{% assign slug = page.title | replace: " ", "-" | downcase %}
 
-		{% assign slug = page.url | replace: "/collections/", "" | replace: "/", "" | downcase %}
+	<h2 style="text-align: center;">{{ page.title }}</h2>
+
+	{% if page.description %}
+		<p class="uk-text-lead uk-text-center uk-margin-medium-bottom">{{ page.description }}</p>
+	{% endif %}
+
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
 		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="{{ page.tittle }}"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="{{ page.title }}"></button>
 			{% for image in page.images %}
-				{% assign slug = page.title | replace: " ", "-" | downcase %}
-				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="{{ image.name }}"></button>
-			{% endfor %}			
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ forloop.index }}" aria-label="{{ image.name }}"></button>
+			{% endfor %}
 		</div>
 		<div class="carousel-inner">
 
 			<div class="carousel-item active">
-				<img src="{{ page.feature }}" class="d-block w-100" alt="{{ page.title }}">
+				<img src="{{ page.feature }}" class="d-block w-100" alt="{{ page.title }}" loading="eager">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>{{ page.title }}</h5>
 					<p>{{ page.summary }}</p>
-				</div>				
+				</div>
 			</div>
 
 			{% for image in page.images %}
-				{% assign slug = page.title | replace: " ", "-" | downcase %}
 				<div class="carousel-item">
-					<img src="../../images/collections/{{ slug }}/{{ image.image }}" class="d-block w-100" alt="{{ image.name }}">
+					<img src="/images/collections/{{ slug }}/{{ image.image }}" class="d-block w-100" alt="{{ image.name }}" loading="lazy">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>{{ image.name }}</h5>
 						<p>{{ image.summary }}</p>
-					</div>						
-				</div>			
+					</div>
+				</div>
 			{% endfor %}
 
 		</div>
@@ -45,5 +48,40 @@
 		</button>
 
 	</div>
+
+	{% if page.tags and page.tags.size > 0 %}
+		<div class="uk-margin-medium-top uk-text-center">
+			{% for tag in page.tags %}
+				<a href="/tags/#{{ tag | slugify }}" class="uk-label uk-margin-small-right">{{ tag }}</a>
+			{% endfor %}
+		</div>
+	{% endif %}
+
+	{% assign related = '' | split: '' %}
+	{% for work in site.works %}
+		{% assign matched = false %}
+		{% for tag in page.tags %}
+			{% if work.tags contains tag and matched == false %}
+				{% assign related = related | push: work %}
+				{% assign matched = true %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+
+	{% if related.size > 0 %}
+		<div class="uk-margin-large-top">
+			<h3 class="uk-text-center">Related Works</h3>
+			<div class="uk-child-width-1-3@m uk-grid-match uk-text-center" data-uk-grid>
+				{% for work in related limit: 6 %}
+					<div>
+						<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
+							<a href="{{ work.url }}"><img src="{{ work.square | default: work.image }}" width="100%" loading="lazy" style="border-radius: 10%;" alt="{{ work.title }}"></a>
+							<h4 class="uk-card-title uk-margin-small">{{ work.title }}</h4>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
 
 </div>

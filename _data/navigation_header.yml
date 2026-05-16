@@ -3,8 +3,20 @@ left:
   - title: Home
     url: /
 
+  - title: Collections
+    url: /collections/
+
+  - title: Works
+    url: /works/
+
+  - title: Tags
+    url: /tags/
+
   - title: Updates
-    url: /updates/    
+    url: /updates/
+
+  - title: About
+    url: /about/
 
 
 right:

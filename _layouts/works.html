@@ -19,10 +19,41 @@ layout: default
                 {% endif %}
             </div>
 
+            {% if page.tags and page.tags.size > 0 %}
+                <div class="uk-margin-medium-top">
+                    {% for tag in page.tags %}
+                        <a href="/tags/#{{ tag | slugify }}" class="uk-label uk-margin-small-right">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% assign related_collections = "" | split: "" %}
+            {% for c in site.collections %}
+                {% assign matched = false %}
+                {% for tag in page.tags %}
+                    {% if c.tags contains tag and matched == false %}
+                        {% assign related_collections = related_collections | push: c %}
+                        {% assign matched = true %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+            {% if related_collections.size > 0 %}
+                <div class="uk-margin-medium-top">
+                    <h3>Part of these collections</h3>
+                    <ul class="uk-list">
+                        {% for c in related_collections %}
+                            {% assign cslug = c.title | replace: " ", "-" | downcase %}
+                            <li><a href="/collections/{{ cslug }}/">{{ c.title }}</a>{% if c.summary %} &mdash; {{ c.summary }}{% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+
             <hr class="uk-margin-medium">
 
             {% include paginate-post.html %}
-            
+
         </article>
 
         <script>

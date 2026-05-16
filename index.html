@@ -2,29 +2,46 @@
 layout: page
 width: expand
 title: Algorotoscope
+description: Algorithmically distorted images and stories about how machine learning, APIs, and AI are reshaping how we see the world.
 ---
 
 {% assign columns = 3 %}
 {% assign container = '' %}
-<div class="uk-section section-videos">
-    <div class="uk-container{{container}}">
 
-		<p>After the 2016 election I found myself extremely depressed, and to help occupy my brain I began to play with <a href="https://www.tensorflow.org/">the machine learning platform Tensorflow</a>, immersing myself in understanding how I can apply texture transfer machine learning to videos and images. I began playing with a lot of my drone footage, transforming them into cartoon like landscape, but then quickly began playing with just still images, and apply potentially meaningful transfers that would augment and evolve the photos I have taken. I use these images in my stories across <a href="https://apievangelist.com">API Evangelist</a>, <a href="https://apievangelist.com">Kin Lane</a>, and other blogs I publish to to help show how algorithms are being used to distort how we see the world.</p>
-		<p>While not as depressed and shocked as I was in 2016, in 2026 I am deeply disappointed in the people of the United States of America. I just can't fathom why people would vote for Trump. I'll be doing more writing and exploring how I feel, but I think  my Algorotoscope Work will only become more relevant as we all work through the next four years. I will keep using my images and storytelling to shine a light on the bias and exploitation that exists on the Internet, and ironically I will keep using AI to highlight the trouble that is continuing to build with APIs and AI. I am glad to have this visual outlet for my work, and enjoy getting to know my photos, as well as creating and applying the AI models I have developed to making technology more visible around us.</p>
+<div class="uk-section uk-section-small">
+	<div class="uk-container uk-container-small uk-text-center">
+		<h1 class="uk-heading-medium uk-margin-small-bottom">Algorotoscope</h1>
+		<p class="uk-text-lead">Using AI to shine a light on the bias and exploitation woven into the world we see online — one distorted image at a time.</p>
+	</div>
+</div>
+
+<div class="uk-section section-videos uk-padding-remove-top">
+	<div class="uk-container{{container}}">
 
 		<div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
 			{% assign collections = site.collections | sort: 'title' %}
 			{% for collection in collections %}
 				{% assign slug = collection.title | replace: " ", "-" | downcase %}
-				<div width="30%">
+				<div>
 					<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
-						<a href="/collections/{{ slug }}/"><img src="{{ collection.feature }}" width="100%" style="border-radius: 25%;"></a>
+						<a href="/collections/{{ slug }}/"><img src="{{ collection.feature }}" width="100%" loading="lazy" style="border-radius: 25%;" alt="{{ collection.title }}"></a>
 						<h3 class="uk-card-title uk-margin">{{ collection.title }}</h3>
 					</div>
 				</div>
 			{% endfor %}
-		</div>	
-		<br>
-		<p>I'm adding images regularly, and using as part of my storytelling in hopes of demonstrating how algorithms are distorting the world around us each day in the online world we live in. My goal is to help make us aware in real time that algorithms are impacting our digital and even our physical worlds. My images do not always look pretty, but I try to make sure they have meaning and push forward the conversation in some way.</p>
+		</div>
+
+		<div class="uk-container uk-container-small uk-margin-large-top">
+			<p>After the 2016 election I found myself extremely depressed, and to help occupy my brain I began to play with <a href="https://www.tensorflow.org/">the machine learning platform Tensorflow</a>, immersing myself in understanding how I could apply texture-transfer machine learning to videos and images. I started with a lot of my drone footage, transforming it into cartoon-like landscapes, then quickly began playing with still images, applying potentially meaningful transfers that would augment and evolve the photos I have taken. I use these images in my stories across <a href="https://apievangelist.com">API Evangelist</a>, <a href="https://kinlane.com">Kin Lane</a>, and other blogs to help show how algorithms are being used to distort how we see the world.</p>
+
+			<p>While not as depressed and shocked as I was in 2016, in 2026 I am deeply disappointed in the people of the United States of America. I just can't fathom why people would vote for Trump. I'll be doing more writing and exploring how I feel, but I think my Algorotoscope work will only become more relevant as we all work through the next four years. I will keep using my images and storytelling to shine a light on the bias and exploitation that exists on the Internet, and ironically I will keep using AI to highlight the trouble that is continuing to build with APIs and AI. I am glad to have this visual outlet for my work, and enjoy getting to know my photos, as well as creating and applying the AI models I have developed to making technology more visible around us.</p>
+
+			<p>I'm adding images regularly, and using them as part of my storytelling in hopes of demonstrating how algorithms are distorting the world around us each day in the online world we live in. My goal is to help make us aware in real time that algorithms are impacting our digital and even our physical worlds. My images do not always look pretty, but I try to make sure they have meaning and push forward the conversation in some way.</p>
+
+			<p class="uk-text-center uk-margin-medium-top">
+				<a href="/collections/" class="uk-button uk-button-primary">Browse all collections</a>
+				<a href="/works/" class="uk-button uk-button-default uk-margin-small-left">Browse all works</a>
+			</p>
+		</div>
 	</div>
 </div>

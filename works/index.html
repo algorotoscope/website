@@ -1,0 +1,30 @@
+---
+layout: page
+width: expand
+title: Works
+description: Individual algorotoscope works — drone footage, photos, and videos run through machine-learning style transfer.
+permalink: /works/
+---
+
+<div class="uk-section section-videos">
+	<div class="uk-container">
+
+		<p class="uk-text-lead uk-text-center">{{ page.description }}</p>
+
+		<div class="uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
+			{% assign works = site.works | sort: 'date' | reverse %}
+			{% for work in works %}
+				<div>
+					<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
+						<a href="{{ work.url }}"><img src="{{ work.square | default: work.image }}" width="100%" loading="lazy" style="border-radius: 10%;" alt="{{ work.title }}"></a>
+						<h4 class="uk-card-title uk-margin-small">{{ work.title }}</h4>
+						{% if work.date %}
+							<p class="uk-text-meta">{{ work.date | date: "%b %Y" }}</p>
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+	</div>
+</div>

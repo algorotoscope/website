@@ -1,0 +1,31 @@
+---
+layout: page
+width: expand
+title: Collections
+description: Themed collections of algorithmically distorted images exploring how machine learning, APIs, and AI reshape what we see.
+permalink: /collections/
+---
+
+<div class="uk-section section-videos">
+	<div class="uk-container">
+
+		<p class="uk-text-lead uk-text-center">{{ page.description }}</p>
+
+		<div class="uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
+			{% assign collections = site.collections | sort: 'title' %}
+			{% for collection in collections %}
+				{% assign slug = collection.title | replace: " ", "-" | downcase %}
+				<div>
+					<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
+						<a href="/collections/{{ slug }}/"><img src="{{ collection.feature }}" width="100%" loading="lazy" style="border-radius: 25%;" alt="{{ collection.title }}"></a>
+						<h3 class="uk-card-title uk-margin-small">{{ collection.title }}</h3>
+						{% if collection.summary %}
+							<p class="uk-text-meta">{{ collection.summary }}</p>
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+	</div>
+</div>

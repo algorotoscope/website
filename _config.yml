@@ -1,5 +1,5 @@
-title:              Kin Lane
-description:        The ramblings, thoughts, and channeling of Kin Lane.
+title:              Algorotoscope
+description:        Algorithmically distorted images and stories about how machine learning, APIs, and AI are reshaping how we see the world — by Kin Lane.
 lang:               en
 
 # Site subpath, e.g. /blog
@@ -9,7 +9,7 @@ baseurl:            ""
 permalink: /:categories/:year/:month/:day/:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "http://kinlane.com"
+url:                "https://algorithmic.rotoscope.work"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin.png
@@ -49,8 +49,10 @@ social:
     linkedin:       https://www.linkedin.com/in/kinlane/
     pinterest:
     twitter:        https://twitter.com/kinlane
-    vimeo:          
-    youtube:        
+    vimeo:
+    youtube:
+
+twitter_username: kinlane
 
 # Share button
 share:

@@ -1,0 +1,69 @@
+---
+layout: page
+width: expand
+title: Tags
+description: Browse collections and works by tag.
+permalink: /tags/
+---
+
+<div class="uk-section section-videos">
+	<div class="uk-container uk-container-small">
+
+		<p class="uk-text-lead uk-text-center">{{ page.description }}</p>
+
+		{% assign rawtags = "" %}
+		{% for c in site.collections %}
+			{% for t in c.tags %}{% assign rawtags = rawtags | append: t | append: "|" %}{% endfor %}
+		{% endfor %}
+		{% for w in site.works %}
+			{% for t in w.tags %}{% assign rawtags = rawtags | append: t | append: "|" %}{% endfor %}
+		{% endfor %}
+		{% assign alltags = rawtags | split: "|" | uniq | sort %}
+
+		<div class="uk-text-center uk-margin-medium-top">
+			{% for tag in alltags %}
+				{% if tag != "" %}
+					<a href="#{{ tag | slugify }}" class="uk-label uk-margin-small-right uk-margin-small-bottom" style="display:inline-block;">{{ tag }}</a>
+				{% endif %}
+			{% endfor %}
+		</div>
+
+		{% for tag in alltags %}
+			{% if tag != "" %}
+			<div class="uk-margin-large-top">
+				<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+
+				{% assign tag_collections = "" | split: "" %}
+				{% for c in site.collections %}
+					{% if c.tags contains tag %}{% assign tag_collections = tag_collections | push: c %}{% endif %}
+				{% endfor %}
+
+				{% assign tag_works = "" | split: "" %}
+				{% for w in site.works %}
+					{% if w.tags contains tag %}{% assign tag_works = tag_works | push: w %}{% endif %}
+				{% endfor %}
+
+				{% if tag_collections.size > 0 %}
+					<h4 class="uk-margin-small-top">Collections</h4>
+					<ul class="uk-list">
+						{% for c in tag_collections %}
+							{% assign cslug = c.title | replace: " ", "-" | downcase %}
+							<li><a href="/collections/{{ cslug }}/">{{ c.title }}</a>{% if c.summary %} &mdash; {{ c.summary }}{% endif %}</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+
+				{% if tag_works.size > 0 %}
+					<h4 class="uk-margin-small-top">Works</h4>
+					<ul class="uk-list">
+						{% for w in tag_works %}
+							<li><a href="{{ w.url }}">{{ w.title }}</a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</div>
+			{% endif %}
+		{% endfor %}
+
+	</div>
+</div>
