@@ -1,0 +1,15 @@
+---
+published: true
+layout: works
+title: Meadow
+date: 2016-12-13T09:00:00.000Z
+tags:
+  - Algorotoscope Works
+  - Meadow
+  - Trees
+image: https://i.ytimg.com/vi/IEa-__7lEtA/maxresdefault.jpg
+square: https://i.ytimg.com/vi/IEa-__7lEtA/hqdefault.jpg
+video: 'https://www.youtube.com/embed/IEa-__7lEtA'
+---
+<center><iframe width="853" height="505" src="{{ page.video }}" frameborder="0" allowfullscreen></iframe></center>
+<center>Floating up the meadow towards the old orchard.</center>

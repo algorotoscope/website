@@ -1,0 +1,15 @@
+---
+published: true
+layout: works
+title: Dunes
+date: 2016-12-13T09:00:00.000Z
+tags:
+  - Algorotoscope Works
+  - Desert
+  - Sand
+image: https://i.ytimg.com/vi/LZTJ03Y-alg/maxresdefault.jpg
+square: https://i.ytimg.com/vi/LZTJ03Y-alg/hqdefault.jpg
+video: 'https://www.youtube.com/embed/LZTJ03Y-alg'
+---
+<center><iframe width="853" height="505" src="{{ page.video }}" frameborder="0" allowfullscreen></iframe></center>
+<center>Walking the peak of the dunes.</center>
