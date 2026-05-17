@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Los Angeles
   - Apocalyptic
-image: http://kinlane-productions2.s3.amazonaws.com/algorotoscope/losangelescloudy/dali_three/file-00_00_35_50.jpg
+image: /images/works/apocalyptic-downtown-los-angeles.jpg
 video: ''
 square: /images/works/apocalyptic-downtown-los-angeles.jpg
 ---

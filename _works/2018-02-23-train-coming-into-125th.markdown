@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - NYC
   - Train
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/68_161_800_500_0_max_0_-5_-1.jpg
+image: /images/works/train-coming-into-125th.jpg
 video: ''
 square: /images/works/train-coming-into-125th.jpg
 ---

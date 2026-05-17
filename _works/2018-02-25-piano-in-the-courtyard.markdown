@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Paris
   - Piano
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/97_193_800_500_0_max_0_1_-1.jpg
+image: /images/works/piano-in-the-courtyard.jpg
 video: ''
 square: /images/works/piano-in-the-courtyard.jpg
 ---

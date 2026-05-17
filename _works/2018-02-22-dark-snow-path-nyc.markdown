@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - NYC
   - Snow
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/64_132_800_500_0_max_0_-5_-1.jpg
+image: /images/works/dark-snow-path-nyc.jpg
 video: ''
 square: /images/works/dark-snow-path-nyc.jpg
 ---

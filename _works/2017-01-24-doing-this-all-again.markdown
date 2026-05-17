@@ -8,7 +8,7 @@ tags:
   - Nazi
   - German
   - Trains
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/status-berlin_propaganda_leaflets.jpg
+image: /images/works/doing-this-all-again.jpg
 video: ''
 square: /images/works/doing-this-all-again.jpg
 ---

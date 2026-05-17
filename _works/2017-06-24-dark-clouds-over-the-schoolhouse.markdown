@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Schoolhouse
   - Clouds
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/schoolhouse-dark-dali.jpg
+image: /images/works/dark-clouds-over-the-schoolhouse.jpg
 video: ''
 square: /images/works/dark-clouds-over-the-schoolhouse.jpg
 ---

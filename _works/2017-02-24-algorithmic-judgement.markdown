@@ -8,7 +8,7 @@ tags:
   - Algorithm
   - Supreme Court
   - Judgement
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/supreme-court-judgement.jpg
+image: /images/works/algorithmic-judgement.jpg
 video: ''
 square: /images/works/algorithmic-judgement.jpg
 ---

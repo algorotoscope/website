@@ -6,7 +6,7 @@ date: 2018-02-27T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - Supreme Court
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C32Eg8bUEAEa_gj.jpg
+image: /images/works/steps-of-the-supreme-court.jpg
 video: ''
 square: /images/works/steps-of-the-supreme-court.jpg
 ---

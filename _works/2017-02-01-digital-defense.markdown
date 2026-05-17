@@ -9,7 +9,7 @@ tags:
   - Cybersecurity
   - Security
   - Defenses
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/castle-on-hill-edinburgh_blue_circuit.JPG
+image: /images/works/digital-defense.jpg
 video: ''
 square: /images/works/digital-defense.jpg
 ---

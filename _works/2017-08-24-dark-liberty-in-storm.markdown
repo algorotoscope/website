@@ -8,7 +8,7 @@ tags:
   - Statue of Liberty
   - Storm
   - Dark
-image: http://kinlane-productions2.s3.amazonaws.com/algorotoscope/builder/filtered/76_73_800_500_0_max_0_-1_-1.jpg
+image: /images/works/dark-liberty-in-storm.jpg
 video: ''
 square: /images/works/dark-liberty-in-storm.jpg
 ---

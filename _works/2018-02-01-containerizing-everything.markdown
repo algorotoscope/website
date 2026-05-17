@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Containers
   - Shipping
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/containership_dark_dali.jpg
+image: /images/works/containerizing-everything.jpg
 video: ''
 square: /images/works/containerizing-everything.jpg
 ---

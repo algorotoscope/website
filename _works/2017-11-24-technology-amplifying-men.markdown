@@ -9,7 +9,7 @@ tags:
   - Male
   - Technology
   - Internet
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories-new/statue-face-open-mouth_copper_circuit.png
+image: /images/works/technology-amplifying-men.png
 video: ''
 square: /images/works/technology-amplifying-men.png
 ---

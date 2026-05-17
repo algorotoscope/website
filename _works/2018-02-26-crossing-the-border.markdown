@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Mexico
   - Border
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C3JdRtDWMAUqS6L.jpg
+image: /images/works/crossing-the-border.jpg
 video: ''
 square: /images/works/crossing-the-border.jpg
 ---

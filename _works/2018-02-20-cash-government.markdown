@@ -6,7 +6,7 @@ date: 2018-02-01T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - Capital
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/77_33_800_500_0_max_0_-5_-1.jpg
+image: /images/works/cash-government.jpg
 video: ''
 square: /images/works/cash-government.jpg
 ---

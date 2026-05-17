@@ -9,7 +9,7 @@ tags:
   - Frost
   - Frozen
   - Sunshine
-image: http://kinlane-productions2.s3.amazonaws.com/algorotoscope/valleyrivertree/yellow_paper/file-00_00_00_00.jpg
+image: /images/works/frozen-tree.jpg
 video: ''
 square: /images/works/frozen-tree.jpg
 ---

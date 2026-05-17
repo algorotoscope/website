@@ -9,7 +9,7 @@ tags:
   - Downtown
   - Yuma
   - Arizona
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/yuma-downtown.jpg
+image: /images/works/left-behind-downtown-yuma.jpg
 video: ''
 square: /images/works/left-behind-downtown-yuma.jpg
 ---

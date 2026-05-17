@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Chair
   - Room
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/64_176_800_500_0_max_0_-1_-1.jpg
+image: /images/works/chair-in-the-corner.jpg
 video: ''
 square: /images/works/chair-in-the-corner.jpg
 ---

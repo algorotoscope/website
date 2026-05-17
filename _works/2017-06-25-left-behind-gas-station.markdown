@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Gas Station
   - Left Behind
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/old-gas-pumps.jpg
+image: /images/works/left-behind-gas-station.jpg
 square: /images/works/left-behind-gas-station.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>

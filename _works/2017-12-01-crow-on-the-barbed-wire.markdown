@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Crow
   - Barbed Wire
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/raven-fence.jpg
+image: /images/works/crow-on-the-barbed-wire.jpg
 video: ''
 square: /images/works/crow-on-the-barbed-wire.jpg
 ---

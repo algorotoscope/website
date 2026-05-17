@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Left Behind
   - Old House
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/old-yellow-house.jpg
+image: /images/works/left-behind-old-house.jpg
 video: ''
 square: /images/works/left-behind-old-house.jpg
 ---

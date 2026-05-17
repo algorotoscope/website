@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Beer
   - Store
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C2zqzsfVIAA2hcM.jpg
+image: /images/works/cold-beer-the-store.jpg
 video: ''
 square: /images/works/cold-beer-the-store.jpg
 ---

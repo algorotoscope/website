@@ -6,7 +6,7 @@ date: 2018-02-21T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - Harlem
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/23_160_800_500_0_max_0_-5_-1.jpg
+image: /images/works/harlem-tracks.jpg
 video: ''
 square: /images/works/harlem-tracks.jpg
 ---

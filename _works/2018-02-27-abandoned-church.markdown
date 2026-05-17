@@ -6,7 +6,7 @@ date: 2018-02-27T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - Church
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C4NLtWrWMAAMY9d.jpg
+image: /images/works/abandoned-church.jpg
 video: ''
 square: /images/works/abandoned-church.jpg
 ---

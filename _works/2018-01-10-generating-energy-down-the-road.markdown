@@ -9,7 +9,7 @@ tags:
   - Frost
   - Frozen
   - Sunshine
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/machine-road_light_dali.jpg
+image: /images/works/generating-energy-down-the-road.jpg
 video: ''
 square: /images/works/generating-energy-down-the-road.jpg
 ---

@@ -6,7 +6,7 @@ date: 2018-02-26T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - NYC
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C2L6QJRUcAEVlYF.jpg
+image: /images/works/down-the-line.jpg
 video: ''
 square: /images/works/down-the-line.jpg
 ---

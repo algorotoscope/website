@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Ellis Island
   - Immigration
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/ellis-island-nazi-poster.jpg
+image: /images/works/algorithmic-distortion-on-immigration-debate.jpg
 video: ''
 square: /images/works/algorithmic-distortion-on-immigration-debate.jpg
 ---

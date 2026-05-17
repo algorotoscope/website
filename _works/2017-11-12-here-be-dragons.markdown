@@ -6,7 +6,7 @@ date: 2017-11-12T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - Dragons
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/dragon_close-up_yellow_collage.jpg
+image: /images/works/here-be-dragons.jpg
 video: ''
 square: /images/works/here-be-dragons.jpg
 ---

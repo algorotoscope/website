@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Tree
   - Maple
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories-new/45_78_800_500_0_max_0_1_-5.jpg
+image: /images/works/colorful-japanese-maple.jpg
 video: ''
 square: /images/works/colorful-japanese-maple.jpg
 ---

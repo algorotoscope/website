@@ -6,7 +6,7 @@ date: 2018-02-27T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - Cars
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C18YCQlUUAQjxRe.jpg
+image: /images/works/old-cars.jpg
 video: ''
 square: /images/works/old-cars.jpg
 ---

@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - America
   - Downtown
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/fredericksburg-downtown-flag.jpg
+image: /images/works/downtown-america.jpg
 video: ''
 square: /images/works/downtown-america.jpg
 ---

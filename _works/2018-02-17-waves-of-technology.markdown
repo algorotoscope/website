@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Waves
   - Technology
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/beach-rocks-currents_blue_circuit_5.jpg
+image: /images/works/waves-of-technology.jpg
 video: ''
 square: /images/works/waves-of-technology.jpg
 ---

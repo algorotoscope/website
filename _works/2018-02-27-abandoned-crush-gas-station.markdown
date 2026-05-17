@@ -6,7 +6,7 @@ date: 2018-02-27T09:00:00.000Z
 tags:
   - Algorotoscope Works
   - Gas Station
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/square/C106VpCVQAEkHqy.jpg
+image: /images/works/abandoned-crush-gas-station.jpg
 video: ''
 square: /images/works/abandoned-crush-gas-station.jpg
 ---

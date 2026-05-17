@@ -7,7 +7,7 @@ tags:
   - Algorotoscope Works
   - Barn
   - Left Behind
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/old-barn.jpg
+image: /images/works/left-behind-old-barn.jpg
 square: /images/works/left-behind-old-barn.jpg
 ---
 <p align="center"><img src="{{ page.image }}" width="75%" style="padding: 15px;" /></p>

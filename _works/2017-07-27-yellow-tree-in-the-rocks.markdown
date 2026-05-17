@@ -8,7 +8,7 @@ tags:
   - Tree
   - Yellow
   - Rocks
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/yellow-tree-in-the-rocks.jpg
+image: /images/works/yellow-tree-in-the-rocks.jpg
 video: ''
 square: /images/works/yellow-tree-in-the-rocks.jpg
 ---

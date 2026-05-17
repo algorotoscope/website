@@ -8,7 +8,7 @@ tags:
   - Religion
   - Technology
   - Silicon Valley
-image: https://s3.amazonaws.com/kinlane-productions2/algo-rotoscope/stories/christianity-under-construction_copper_circuit.jpg
+image: /images/works/working-on-the-technology-religion.jpg
 video: ''
 square: /images/works/working-on-the-technology-religion.jpg
 ---
